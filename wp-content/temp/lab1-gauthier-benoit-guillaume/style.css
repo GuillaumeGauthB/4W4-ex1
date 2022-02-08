@@ -1,0 +1,16 @@
+/*
+Theme name: lab1-gauthier-benoit-guillaume
+*/
+
+body {
+    background-color: aqua;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+.entete__principal {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}

@@ -1,0 +1,25 @@
+/**
+Theme name: Lab3 Guillaume Gauthier-Benoit
+*/
+/* ---------------INITIALISATION---------- */
+@import "initialisation/_normalize";
+@import "initialisation/_boxsize";
+/* -----------------------------------------------------------------
+VARIABLES
+------------------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/structure";
+@import "variables/typo";
+/* -------------------LAYOUT---------- */
+@import "layout/_layout";
+/* -----------------------------------------------------------------
+ELEMENTS
+------------------------------------------------------------------- */
+@import "elements/links";
+/* -----------------------------------------------------------------
+COMPOSANTS
+------------------------------------------------------------------- */
+@import "composants/cours";
+@import "composants/entete";
+@import "composants/footer";
+@import "composants/navigation";

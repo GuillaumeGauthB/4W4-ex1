@@ -1,0 +1,33 @@
+.site__footer__partie1, .site__footer__partie2__liens{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.site__footer__partie1{
+    width:90%;
+    background-color: rgb(32, 32, 32);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:4%;
+    margin-bottom: 1%;
+    padding: 20px;
+}
+
+.site__footer__partie1 > section {
+    width:30%;
+}
+
+.site__footer,  .site__footer__partie1__liens {
+    display: flex;
+    flex-flow: column nowrap;
+    color:rgb(224, 224, 224);
+}
+
+.site__footer__partie2__liens, .site__footer__partie2__liens{
+    color:blue;
+}
+
+.site__footer__partie2{
+    margin: 0 auto;
+}
