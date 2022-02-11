@@ -445,14 +445,64 @@ COMPOSANTS
   color: DimGrey;
 }
 
-.header__principal {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(0.8rem, 1vw, 4rem);
+.site__header {
+  display: flex;
+  flex-direction: column;
 }
 
-.header__secondaire {
+@media screen and (min-width: 600px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  align-items: center;
+}
+
+.site__header__titre h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(0.6rem, 0.75vw, 3rem);
+  font-size: clamp(1rem, 5vw, 10rem);
+}
+
+.site__header__titre h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.6rem, 2vw, 2rem);
+}
+
+@media screen and (min-width: 600px) {
+  .site__header__util {
+    display: flex;
+  }
+}
+
+.icone {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recherche__input {
+  outline: none;
+  border: none;
+  padding: 2.5px;
+}
+
+.recherche__bouton {
+  width: 24px;
+  height: 19px;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site__footer__partie1, .site__footer__partie2__liens {
