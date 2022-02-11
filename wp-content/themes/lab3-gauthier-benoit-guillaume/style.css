@@ -479,6 +479,17 @@ COMPOSANTS
   }
 }
 
+.site__header__util .icone {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .site__header__util .icone {
+    width: 100%;
+  }
+}
+
 .icone {
   display: flex;
   justify-content: space-around;

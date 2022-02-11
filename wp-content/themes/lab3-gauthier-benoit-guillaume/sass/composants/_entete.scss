@@ -24,7 +24,11 @@
             display:flex;
         }   
         .icone{
-            
+            width:40%;
+            margin: 0 auto;
+            @media screen and (min-width: $largeur__media-tablette){
+                width:100%;
+            }
         }
     }
 }
