@@ -483,6 +483,7 @@ COMPOSANTS
 .site__header__util .icone {
   width: 40%;
   margin: 0 auto;
+  margin-right: 10vw;
 }
 
 @media screen and (min-width: 600px) {
@@ -493,7 +494,6 @@ COMPOSANTS
 
 .icone {
   display: flex;
-  justify-content: space-around;
 }
 
 .recherche {
@@ -511,9 +511,14 @@ COMPOSANTS
   width: 80%;
 }
 
-.recherche__bouton {
-  width: 24px;
-  height: 19px;
+@media screen and (min-width: 600px) {
+  .recherche__input {
+    width: 20vw;
+  }
+}
+
+.recherche__button {
+  background-color: rgba(151, 0, 0, 0.473);
   outline: none;
   border: none;
   padding: 0;
