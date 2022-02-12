@@ -331,7 +331,6 @@ VARIABLES
 .site {
   font-size: 12px;
   background-color: white;
-  gap: 12px;
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
@@ -340,6 +339,7 @@ VARIABLES
 /* tbalette*/
 @media screen and (min-width: 600px) {
   .site {
+    gap: 12px;
     grid-template-columns: 350px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
@@ -555,8 +555,8 @@ COMPOSANTS
 }
 
 #burger {
-  display: block;
   position: absolute;
+  top: 6px;
   transform: rotate(0deg);
   transition: transform .3s;
 }
