@@ -506,6 +506,9 @@ COMPOSANTS
   outline: none;
   border: none;
   padding: 2.5px;
+  background-color: rgba(151, 0, 0, 0.473);
+  color: white;
+  width: 80%;
 }
 
 .recherche__bouton {
