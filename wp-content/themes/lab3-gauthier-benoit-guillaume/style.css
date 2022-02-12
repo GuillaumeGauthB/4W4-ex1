@@ -461,6 +461,7 @@ COMPOSANTS
 .site__header__titre {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .site__header__titre h1 {
