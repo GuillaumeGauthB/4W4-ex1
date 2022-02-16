@@ -1,25 +1,33 @@
-/**
-Theme name: Lab3 Guillaume Gauthier-Benoit
+/*
+theme name: Exer-1 gr3
 */
-/* ---------------INITIALISATION---------- */
-@import "initialisation/_normalize";
-@import "initialisation/_boxsize";
-/* -----------------------------------------------------------------
+/* ---------------------------------------------------------
 VARIABLES
-------------------------------------------------------------------- */
+--------------------------------------------------------- */
 @import "variables/couleurs";
-@import "variables/structure";
 @import "variables/typo";
-/* -------------------LAYOUT---------- */
-@import "layout/_layout";
-/* -----------------------------------------------------------------
-ELEMENTS
-------------------------------------------------------------------- */
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
 @import "elements/links";
-/* -----------------------------------------------------------------
-COMPOSANTS
-------------------------------------------------------------------- */
-@import "composants/cours";
-@import "composants/entete";
-@import "composants/footer";
-@import "composants/navigation";
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/contenu";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/footer";
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
