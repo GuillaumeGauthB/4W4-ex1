@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Exer-1 gr3
+theme name: Theme Guillaume Gauthier-Benoit
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -493,11 +493,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffa3a3;
+  background-color: #2e3440;
 }
 
 .menu-item a:hover {
-  background-color: #ffd1d1;
+  background-color: #2e3440;
 }
 
 @media screen and (min-width: 800px) {
@@ -511,8 +511,29 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #2e3440;
   padding: 15px;
+}
+
+.site__footer__info1 {
+  display: flex;
+  justify-content: center;
+}
+
+.site__footer__info1__elem * {
+  width: 20%;
+}
+
+.site__footer__info1__elem__h2 {
+  border: 1px solid white;
+}
+
+.site__footer__info1__elem__h3 {
+  border: 1px solid white;
+}
+
+.site__footer__info1__elem__p {
+  border: 1px solid white;
 }
 
 .site__footer__menu__ul {
@@ -532,7 +553,15 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: aqua;
+  color: #f40b0b;
+}
+
+.site__footer__menu__ul .menu-item:visited svg {
+  color: #1435eb;
+}
+
+.site__footer__menu__ul .menu-item:hover svg {
+  color: #19e123;
 }
 
 .footer__titre,
@@ -570,7 +599,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #2e3440;
 }
 
 .site {
