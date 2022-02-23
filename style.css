@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*
 theme name: Theme Guillaume Gauthier-Benoit
+Author URI: https://github.com/GuillaumeGauthB/4W4-main
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -342,7 +343,7 @@ a {
 }
 
 a:visited {
-  color: #5c4033;
+  color: #ff5100;
 }
 
 a:hover, a:focus, a:active {
@@ -448,22 +449,38 @@ COMPOSANTES
   background-color: #594036;
   color: #fa9292;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.site__header .header__titre {
+.header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
+.header__desc {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.util {
+  margin-left: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.util__menu {
+  display: flex;
 }
 
 #burger {
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+}
+
+#chk-burger {
+  display: none;
 }
 
 #chk-burger:checked ~ #burger {
@@ -571,6 +588,26 @@ COMPOSANTES
   text-align: center;
 }
 
+.erreur-404 {
+  background-color: #fff;
+}
+
+.erreur-404 h1 {
+  font-size: 5rem;
+}
+
+.erreur-404 h2 {
+  font-size: 2.5rem;
+}
+
+.erreur-404 p {
+  font-size: 1.5rem;
+}
+
+.cours__titre {
+  color: purple;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -595,6 +632,7 @@ theme name: Lab 2 Lemieux Florence
 .site__main {
   grid-area: main;
   background-color: #eca7a7;
+  padding: 10px 15px 10px 15px;
 }
 
 .site__footer {

@@ -1,5 +1,6 @@
 /*
 theme name: Theme Guillaume Gauthier-Benoit
+Author URI: https://github.com/GuillaumeGauthB/4W4-main
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -26,6 +27,8 @@ COMPOSANTES
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/footer";
+@import "composantes/erreur_404";
+@import "composantes/single-post";
 
 /* ---------------------------------------------------------
 LAYOUT

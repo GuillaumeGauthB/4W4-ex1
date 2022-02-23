@@ -14,8 +14,14 @@
 </head>
 <body  <?php body_class("site"); ?>>
 <header class="site__header">
-    <h1 class="header__titre"><?php bloginfo('name'); ?></h1>
+    <h1 class="header__titre"> <a href="<?php echo esc_url( home_url('/'));?>"><?php 	get_custom_logo() ?><?php bloginfo('name'); ?> </a> </h1>
     <h2 class="header__description"><?php bloginfo('description'); ?></h2>
+    <div class="util">
+        <div class="util__menu">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+        <?php get_search_form()?>
+    </div>
 </header>
 <section class="site__barre">
     <input type="checkbox"  id="chk-burger">
