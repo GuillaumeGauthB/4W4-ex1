@@ -43,8 +43,6 @@
 
 
 
-
-
 .cours__titre {
     font-size: 1.5rem;
     color: $color__font-main;
@@ -59,4 +57,9 @@
 
 .cours__description {
     font-size: 1rem;
+}
+
+.cours__img{
+    object-fit:cover;
+    width:20%;
 }

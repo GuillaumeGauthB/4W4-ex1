@@ -1,8 +1,6 @@
 <footer class="site__footer">
     <div class="site__footer__info1">
-        <h2 class="site__footer__info1__elem__h2 elem">Le beau site__footer</h2>
-        <p class="site__footer__info1__elem__p elem">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
-        <h3 class="site__footer__info1__elem__h3 elem">Fait par Florence Lemieux Cayer</h3>
+        <h2 class="site__footer__info1__elem__h2 elem">Le beau(?) site de Guillame Gauthier-Benoit</h2>
     </div>
 <?php 
 
@@ -16,7 +14,9 @@ wp_nav_menu(array(
                     "link_before"=>$icone)); ?>
 <?= 	get_search_form() ?>
 </footer>
-<php wp_footer() ?>
+<div class="barre-recherche">
+    <php wp_footer() ?>
+</div>
 </body>
 
 </html>

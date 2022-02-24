@@ -15,6 +15,7 @@
                         $descCours = get_the_excerpt();
                         ?>
                         <h3 class="cours__titre"> <a href="<?php 	get_permalink() ?>"><?= $titreFiltreCours; ?></a></h3>
+                        <p class="cours__img"><?= the_post_thumbnail('thumbnail') ?></p>
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>
