@@ -2,24 +2,17 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
+    color:$color__font-footer;
+    &__barre-recherche{
+      display:flex;
+      justify-content:center;
+    }
     &__info1{
       display:flex;
       justify-content:center;
       &__elem{
         *{
           width:20%;
-        }
-        &__h2{
-          // width: 20%;
-        border: 1px solid white;
-        }
-        &__h3{
-          // width: 20%;
-        border: 1px solid white;
-        }
-        &__p{
-          // width: 20%;
-        border: 1px solid white;
         }
       }
     }

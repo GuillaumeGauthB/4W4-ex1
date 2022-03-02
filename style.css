@@ -411,7 +411,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #d1ffd7;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -456,7 +456,7 @@ COMPOSANTES
 
 .site__header {
   background-color: #5d5d5f;
-  color: #fa9292;
+  color: #e77b23;
   padding-left: 10px;
   display: flex;
   align-items: center;
@@ -539,6 +539,12 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #2e3440;
   padding: 15px;
+  color: #c2c2c2;
+}
+
+.site__footer__barre-recherche {
+  display: flex;
+  justify-content: center;
 }
 
 .site__footer__info1 {
@@ -548,18 +554,6 @@ COMPOSANTES
 
 .site__footer__info1__elem * {
   width: 20%;
-}
-
-.site__footer__info1__elem__h2 {
-  border: 1px solid white;
-}
-
-.site__footer__info1__elem__h3 {
-  border: 1px solid white;
-}
-
-.site__footer__info1__elem__p {
-  border: 1px solid white;
 }
 
 .site__footer__menu__ul {
@@ -593,7 +587,7 @@ COMPOSANTES
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: #c2c2c2;
   text-align: center;
 }
 
@@ -619,6 +613,15 @@ COMPOSANTES
 
 .cours__titre {
   color: purple;
+}
+
+.recherche {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.recherche__submit svg {
+  color: white;
 }
 
 /* ---------------------------------------------------------

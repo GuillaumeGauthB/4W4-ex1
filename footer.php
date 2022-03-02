@@ -12,10 +12,12 @@ wp_nav_menu(array(
                     "menu_class"=>"site__footer__menu__ul",
 
                     "link_before"=>$icone)); ?>
-<?= 	get_search_form() ?>
+<div class="site__footer__barre-recherche">
+    <?= 	get_search_form() ?>
+</div>
 </footer>
 <div class="barre-recherche">
-    <php wp_footer() ?>
+    <?php wp_footer() ?>
 </div>
 </body>
 <?php 	wp_footer() ?>
