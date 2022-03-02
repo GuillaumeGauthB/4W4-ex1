@@ -6,12 +6,15 @@
     align-items:center;
 }
     .header__titre {
-      font-size: 3em;
+      font-size: 2.5em;
       font-family: $font__titre;
     }
-    .header__desc {
-      font-size: 1.5rem;
+    .header__description {
+      font-size: 0.8rem;
       font-family: $font__main;
+      @media screen and (min-width:$largeur__media--tablette){
+        font-size: 1.2rem;
+      }
     }
     .util{
       margin-left:auto;
