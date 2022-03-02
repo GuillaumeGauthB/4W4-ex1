@@ -615,9 +615,21 @@ COMPOSANTES
   color: purple;
 }
 
+.cours__titre section p {
+  padding: 0 5rem;
+}
+
 .recherche {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.recherche__text {
+  color: #c2c2c2;
+}
+
+.recherche__submit {
+  background-color: #e77b23;
 }
 
 .recherche__submit svg {

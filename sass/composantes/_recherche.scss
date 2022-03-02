@@ -2,11 +2,12 @@
     display:flex;
     flex-flow:row nowrap;
     &__text{
-
+        color:$color__font-footer;
     }
     &__submit{
+        background-color:$color__font-header;
         svg{
-            color:white;
+            color:rgb(255, 255, 255);
         }
     }
 }
