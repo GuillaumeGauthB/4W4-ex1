@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme name: Theme Guillaume Gauthier-Benoit
+Theme name: 2022-4W4 Guillaume Gauthier-Benoit
 Author: Guillaume Gauthier-Benoit
 Author URI: https://github.com/GuillaumeGauthB/4W4-main
-Description: Exercice dqans le cadre du cours 4W4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/guillaumegauthb/4w4-main
 Version: 1.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -548,57 +548,55 @@ COMPOSANTES
   color: #c2c2c2;
 }
 
-.site__footer__barre-recherche {
+.site__footer__colonne {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.site__footer__info1 {
+.site__footer__colonne section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  flex: 0 0 30%;
 }
 
-.site__footer__info1__elem * {
-  width: 20%;
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.site__footer__menu__ul {
+.site__footer__ligne section {
+  margin-top: 10px;
+}
+
+.site__footer__ligne .footer__menu ul {
   display: flex;
+  flex-direction: row;
   list-style-type: none;
   justify-content: center;
 }
 
-.site__footer__menu__ul .menu-item {
+.site__footer__ligne .footer__menu ul .menu-item {
   margin: 10px 5px;
 }
 
-.site__footer__menu__ul .menu-item a {
+.site__footer__ligne .footer__menu ul .menu-item a {
   display: flex;
   align-items: center;
   padding: 3px;
 }
 
-.site__footer__menu__ul .menu-item a svg {
+.site__footer__ligne .footer__menu ul .menu-item a svg {
   color: #f40b0b;
 }
 
-.site__footer__menu__ul .menu-item:visited svg {
+.site__footer__ligne .footer__menu ul .menu-item:visited svg {
   color: #1435eb;
 }
 
-.site__footer__menu__ul .menu-item:hover svg {
+.site__footer__ligne .footer__menu ul .menu-item:hover svg {
   color: #19e123;
-}
-
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: #c2c2c2;
-  text-align: center;
-}
-
-.barre-footer {
-  margin: auto 0;
 }
 
 .erreur-404 {
