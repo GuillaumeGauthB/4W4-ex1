@@ -4,6 +4,10 @@
     padding-left: 10px;
     display:flex;
     align-items:center;
+    flex-flow: column nowrap;
+    @media screen and (min-width:$largeur__media--tablette){
+      flex-flow: row nowrap;
+    }
 }
     .header__titre {
       font-size: 2.5em;
@@ -17,9 +21,12 @@
       }
     }
     .util{
-      margin-left:auto;
-      display:flex;
-      flex-flow: column nowrap;
+      // display: none;
+      @media screen and (min-width:$largeur__media--tablette){
+        display:flex;
+        margin-left:auto;
+        flex-flow: column nowrap;
+      }
       &__menu{
         display:flex;
       }
