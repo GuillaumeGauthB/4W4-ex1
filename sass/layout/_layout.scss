@@ -36,7 +36,7 @@ html{
     box-shadow: 5px 5px 20px #808080;
 }
 
-.principal{
+.principal, .main__single-post{
     grid-area: main;
     background-color: $color__background-main;
     padding: 10px 15px 10px 15px;

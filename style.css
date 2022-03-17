@@ -483,7 +483,7 @@ COMPOSANTES
   }
 }
 
-.site__header .util #block-11 > ul {
+.site__header .util .widget_block ul {
   display: flex;
   justify-content: space-around;
 }
@@ -744,7 +744,7 @@ html {
   box-shadow: 5px 5px 20px #808080;
 }
 
-.principal {
+.principal, .main__single-post {
   grid-area: main;
   background-color: #dedede;
   padding: 10px 15px 10px 15px;
