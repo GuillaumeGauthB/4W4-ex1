@@ -491,6 +491,13 @@ COMPOSANTES
 .site__header .header__titre {
   font-size: 2.5em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header .header__titre {
+    text-align: left;
+  }
 }
 
 .site__header .header__description {
@@ -854,7 +861,7 @@ ANIMATION
   animation: flasherTitre 2s infinite;
 }
 
-.principal > h1 {
+#formation__h1 {
   animation: frontPageTitreDeplacement 8s infinite;
 }
 

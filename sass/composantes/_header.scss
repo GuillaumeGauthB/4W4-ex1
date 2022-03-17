@@ -28,6 +28,10 @@
     .header__titre {
       font-size: 2.5em;
       font-family: $font__titre;
+      text-align:center;
+      @media screen and (min-width:$largeur__media--tablette){
+        text-align:left;
+      }
     }
     .header__description {
       font-size: 0.8rem;
