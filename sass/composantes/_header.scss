@@ -5,10 +5,26 @@
     display:flex;
     align-items:center;
     flex-flow: column nowrap;
+    &__titre{
+      display:flex;
+      align-items:center;
+    }
     @media screen and (min-width:$largeur__media--tablette){
       flex-flow: row nowrap;
     }
-}
+
+    .util{
+      // display: none;
+      @media screen and (min-width:$largeur__media--tablette){
+        display:flex;
+        margin-left:auto;
+        flex-flow: column nowrap;
+      }
+      #block-11 > ul{
+        display:flex;
+        justify-content: space-around;
+      }
+    }
     .header__titre {
       font-size: 2.5em;
       font-family: $font__titre;
@@ -20,14 +36,7 @@
         font-size: 1.2rem;
       }
     }
-    .util{
-      // display: none;
-      @media screen and (min-width:$largeur__media--tablette){
-        display:flex;
-        margin-left:auto;
-        flex-flow: column nowrap;
-      }
-      &__menu{
-        display:flex;
-      }
+    &__menu{
+      display:flex;
     }
+}

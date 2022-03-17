@@ -15,5 +15,8 @@
     margin-bottom: 5px;
     .recherche__text{
         width:80vw;
+        @media screen and (min-width:$largeur__media--tablette){
+            width: 20vw;
+        }
     }
 }

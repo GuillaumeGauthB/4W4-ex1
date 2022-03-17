@@ -33,8 +33,9 @@
         text-decoration: none;
         padding : 4px;
         background-color: $color__background-link;
+        transition: background-color 1s;
         &:hover {
-            background-color: $color__background-link-hover;
+            background-color: rgb(82, 82, 255);
         }
     }
 }
@@ -46,7 +47,6 @@
     .menu-principal-container {
         display : block;
     }
-
 }
 
 

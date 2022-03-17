@@ -56,10 +56,27 @@
         }
     }
     }
-    .footer__recherche{}
   }
 }
 
+.footer__bouton-rgb-danger{
+  margin-top:20px;
+  #chk-rgb{
+    display:none;
+  }
+  #rgb-danger{
+    padding:5px;
+    background-color:rgb(177, 177, 177);
+    color: black;
+    border:1px solid blue;
+    border-radius: 10px;
+    &:hover{cursor:pointer;}
+  }
+}
+
+.elem{
+  text-align:center;
+}
 // .site__footer {
 //     font-family: $font__titre;
 //     background-color: $color__background-footer;

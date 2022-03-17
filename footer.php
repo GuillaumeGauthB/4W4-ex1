@@ -28,6 +28,12 @@
         <section class="footer__barre-recherche">
             <?= 	get_search_form() ?>
         </section>
+        <section class="footer__bouton-rgb-danger">
+            <input type="checkbox"  id="chk-rgb">
+            <label for="chk-rgb" id="rgb-danger">
+                DANGER: CE BOUTON ACTIVE LA RGB || ACTIVER AVEC PRÉCAUTION (en construction)
+            </label>
+        </section>
     </div>
 </footer>
 <div class="barre-recherche">
