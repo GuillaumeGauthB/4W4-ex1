@@ -369,7 +369,7 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #1435eb;
+  color: #ebe714;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -420,6 +420,7 @@ COMPOSANTES
   flex-direction: column;
   width: 100%;
   padding: 10px;
+  transition: transform 0.5s;
 }
 
 @media screen and (min-width: 800px) {
@@ -432,6 +433,11 @@ COMPOSANTES
   .formation__cours {
     width: 30%;
   }
+}
+
+.formation__cours:hover {
+  transform: scale(1.05);
+  border: solid #4dd5ff 2px;
 }
 
 .cours__titre {
@@ -517,8 +523,10 @@ COMPOSANTES
 
 #burger {
   position: absolute;
+  right: 0;
   transition: transform .3s;
   transform: rotate(0);
+  z-index: 1;
 }
 
 #chk-burger {
@@ -530,11 +538,35 @@ COMPOSANTES
 }
 
 .menu-principal-container {
-  display: none;
+  z-index: 0;
+  height: 0;
+}
+
+.menu-principal-container > ul {
+  transform: translateY(-100%);
+}
+
+@media (max-width: 799px) {
+  .menu-principal-container > ul {
+    transition: 0.5s;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu-principal-container {
+    height: 100%;
+  }
+  .menu-principal-container > ul {
+    transform: translateY(0);
+  }
 }
 
 #chk-burger:checked ~ .menu-principal-container {
-  display: block;
+  height: 100%;
+}
+
+#chk-burger:checked ~ .menu-principal-container > ul {
+  transform: translateY(0);
 }
 
 .menu {
@@ -551,13 +583,14 @@ COMPOSANTES
 .menu-item a {
   display: block;
   text-decoration: none;
-  padding: 4px;
+  padding: 8px;
   background-color: #2e3440;
-  transition: background-color 1s;
+  transition: 1s;
 }
 
 .menu-item a:hover {
   background-color: #5252ff;
+  font-size: 1.1em;
 }
 
 @media screen and (min-width: 800px) {
@@ -580,13 +613,31 @@ COMPOSANTES
   text-align: center;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne {
+    flex-direction: row;
+  }
+}
+
+.site__footer__colonne barre {
+  background-color: white;
+  width: 3px;
+  height: 240px;
+  border-radius: 5px;
 }
 
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 1px solid #aaa;
   flex: 0 0 30%;
+}
+
+.site__footer__colonne section:last-of-type {
+  border-right: none;
 }
 
 .site__footer__ligne {
@@ -614,17 +665,19 @@ COMPOSANTES
   display: flex;
   align-items: center;
   padding: 3px;
+  background-color: #2e3440;
 }
 
 .site__footer__ligne .footer__menu ul .menu-item a svg {
+  transition: 1s;
   color: #f40b0b;
 }
 
-.site__footer__ligne .footer__menu ul .menu-item:visited svg {
-  color: #1435eb;
+.site__footer__ligne .footer__menu ul .menu-item a:visited svg {
+  color: #ebe714;
 }
 
-.site__footer__ligne .footer__menu ul .menu-item:hover svg {
+.site__footer__ligne .footer__menu ul .menu-item a:hover svg {
   color: #19e123;
 }
 
@@ -672,8 +725,21 @@ COMPOSANTES
   color: purple;
 }
 
-.cours__titre section p {
-  padding: 0 5rem;
+.cours section {
+  display: flex;
+  flex-flow: nowrap row;
+}
+
+.cours section img {
+  padding: 5px;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+
+.cours section p {
+  padding-right: 30px;
+  margin-right: 20px;
+  border-right: solid white 3px;
 }
 
 .recherche {
@@ -764,13 +830,13 @@ html {
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 
@@ -783,7 +849,7 @@ ANIMATION
 }
 
 .animation div {
-  transform: translateY(-100vh);
+  transform: translateY(-130vh);
   width: 100px;
   height: 100px;
   background-color: deepskyblue;
@@ -863,7 +929,10 @@ ANIMATION
 
 @keyframes animerFront {
   0% {
-    transform: translateY(-100vh);
+    transform: translateY(-130vh);
+    @media screen and (min-width: 800px) {
+      transform: translateY(-100vh);
+    }
   }
   30% {
     transform: translateY(0px);
@@ -872,7 +941,10 @@ ANIMATION
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(100vh);
+    transform: translateY(130vh);
+    @media screen and (min-width: 800px) {
+      transform: translateY(100vh);
+    }
   }
 }
 

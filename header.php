@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>4W4</title>
     <?php wp_head() ?>
 </head>
 <body  <?php body_class("site"); ?>>
@@ -27,9 +27,22 @@
 </header>
 <section class="site__barre">
     <input type="checkbox"  id="chk-burger">
-    <label for="chk-burger" id="burger">
+    <label for="chk-burger" id="burger" onclick="navigationCliquee()">
         <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#fff"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
     </label>
     <?php wp_nav_menu(array("menu"=>"principal",
                             "container"=>"nav")); ?>
 </section>
+<script>
+    // let body = document.querySelector(".site");
+    // let navActivee = false;
+    // function navigationCliquee(){
+    //     if(navActivee){
+    //         body.style.transform = "translateY(-100%)";
+    //     }
+    //     else{
+    //         body.style.transform = "translateY(0)";
+    //     }
+    //     navActivee = !navActivee;
+    // }
+</script>

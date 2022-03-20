@@ -5,7 +5,9 @@
 
     <div class="site__footer__colonne">
         <section class="footer__adresse"><?php 	get_sidebar('pied_page_colonne_1'); ?></section>
+        <barre></barre>
         <section class="footer__article"><?php 	get_sidebar('pied_page_colonne_2'); ?></section>
+        <barre></barre>
         <section class="footer__lien"><?php 	get_sidebar('pied_page_colonne_3'); ?></section>
     </div>
     <div class="site__footer__ligne">
@@ -28,12 +30,6 @@
         <section class="footer__barre-recherche">
             <?= 	get_search_form() ?>
         </section>
-        <!-- <section class="footer__bouton-rgb-danger">
-            <input type="checkbox"  id="chk-rgb">
-            <label for="chk-rgb" id="rgb-danger">
-                DANGER: CE BOUTON ACTIVE LA RGB || ACTIVER AVEC PRÉCAUTION (en construction)
-            </label>
-        </section> -->
         <section class="footer__bouton-rgb">
                 <button onclick="rgb()" id="bouton-rgb">DANGER: CE BOUTON ACTIVE LA RGB</button>
         </section>

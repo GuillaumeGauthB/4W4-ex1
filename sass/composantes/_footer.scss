@@ -7,10 +7,26 @@
     text-align: center;
     display:flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap:5px;
+    @media screen and (min-width:$largeur__media--tablette){
+      flex-direction:row;
+    }
+    barre{
+      background-color:white;
+      width:3px;
+      height:240px;
+      border-radius:5px;
+    }
     section{
       display:flex;
       flex-direction: column;
-      border: 1px solid #aaa;
+      // border: 1px solid #aaa;
+      // border-right: 2px solid white;
+      // padding-right:10px;
+      &:last-of-type{
+        border-right:none;
+      }
       flex: 0 0 30%;
     }
     .footer__adresse{}
@@ -39,18 +55,21 @@
             display : flex;
             align-items: center;
             padding : 3px;
+            background-color: $color__background-footer;
             svg { // .site__footer__menu__ul .menu-item a svg
+              transition:1s;
               color: $color__link__footer;
             }
-          }
-          &:visited{
-            svg{
-              color:$color__link__footer-visited;
+            &:visited{
+              svg{
+                color:$color__link__footer-visited;
+                // fill:$color__link__footer-visited;
+              }
             }
-          }
-          &:hover{
-            svg{
-              color: $color__link__footer-hover;
+            &:hover{
+              svg{
+                color: $color__link__footer-hover;
+              }
             }
           }
         }

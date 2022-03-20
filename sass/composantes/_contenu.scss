@@ -39,6 +39,11 @@
             width: 30%;
         }
         padding: 10px;
+        transition: transform 0.5s;
+        &:hover{
+            transform:scale(1.05);
+            border: solid rgb(77, 213, 255) 2px;
+        }
     }
 
 

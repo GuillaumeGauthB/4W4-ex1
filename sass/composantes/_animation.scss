@@ -2,7 +2,7 @@
     display:flex;
     justify-content: space-around;
     div{
-        transform: translateY(-100vh);
+        transform: translateY(-130vh);
         width: 100px;
         height: 100px;
         background-color: deepskyblue;
@@ -47,7 +47,10 @@
 
 @keyframes animerFront{
     0%{
-        transform: translateY(-100vh);
+        transform: translateY(-130vh);
+        @media screen and (min-width:$largeur__media--tablette){
+            transform: translateY(-100vh);
+        }
     }
     30%{
         transform: translateY(0px);
@@ -56,7 +59,10 @@
         transform: translateY(0px);
     }
     100%{
-        transform: translateY(100vh);
+        transform: translateY(130vh);
+        @media screen and (min-width:$largeur__media--tablette){
+            transform: translateY(100vh);
+        }
     }
 }
 
