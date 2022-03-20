@@ -100,6 +100,17 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+    register_sidebar(
+        array(
+            'id'            => 'animation_1',
+            'name'          => __( 'Animation 1' ),
+            'description'   => __( 'Animation des cercles du front page' ),
+            'before_widget' => '<div id="%1$s" class="animation widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 ?>

@@ -13,7 +13,7 @@
         </div>
     </section>
     <section class="animation">
-        <div>
+        <!-- <div>
             <p>1</p>
         </div>
         <div>
@@ -27,7 +27,8 @@
         </div>
         <div>
             <p>5</p>
-        </div>
+        </div> -->
+        <?php 	get_sidebar('animation_1'); ?>
     </section>
 </main>
 <?php get_footer() ?>

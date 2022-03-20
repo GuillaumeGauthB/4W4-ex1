@@ -29,9 +29,6 @@
       }
       flex: 0 0 30%;
     }
-    .footer__adresse{}
-    .footer__article{}
-    .footer__lien{}
   }
   &__ligne{
     display:flex;
@@ -40,9 +37,6 @@
     section{
       margin-top:10px;
     }
-    .footer__description{}
-    .footer__auteur{}
-    .footer__copyright{}
     .footer__menu{
       ul{ // .site__footer__menu__ul
         display : flex;
@@ -73,7 +67,7 @@
             }
           }
         }
-    }
+      }
     }
   }
 }

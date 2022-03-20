@@ -68,6 +68,15 @@
                 }
             }
         }
+
+        let home = document.querySelector(".home");
+        let site = document.querySelector(".site");
+        if(home != null){
+            let changerTailleBackgroud = document.createElement("style");
+            changerTailleBackgroud.innerHTML = 
+            ".site::after{height:100%;}";
+            document.head.appendChild(changerTailleBackgroud);
+        }
     </script>
 </footer>
 <div class="barre-recherche">

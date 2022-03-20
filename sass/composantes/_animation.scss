@@ -1,7 +1,7 @@
-.animation{
+#animation_1 #block-9 ul{
     display:flex;
     justify-content: space-around;
-    div{
+    li{
         transform: translateY(-130vh);
         width: 100px;
         height: 100px;
@@ -11,20 +11,30 @@
         display:flex;
         justify-content: space-around;
         align-items:center;
-        p{
+        a{
             text-align:center;
+            svg{
+                transform:scale(2);
+                color:#2e3440;
+            }
+        }
+        @for $i from 1 through 5{
+            &:nth-of-type(#{$i}){
+                animation: animerFront 5s infinite;
+                animation-delay: #{$i*0.5s};
+            }
         }
     }
 }
 
-.animation div{
-    @for $i from 1 through 5{
-        &:nth-of-type(#{$i}){
-            animation: animerFront 5s infinite;
-            animation-delay: #{$i*0.5s};
-        }
-    }
-}
+// .animation div{
+//     @for $i from 1 through 5{
+//         &:nth-of-type(#{$i}){
+//             animation: animerFront 5s infinite;
+//             animation-delay: #{$i*0.5s};
+//         }
+//     }
+// }
 
 .wp-block-social-links li{
     @for $i from 1 through 6{

@@ -33,16 +33,3 @@
     <?php wp_nav_menu(array("menu"=>"principal",
                             "container"=>"nav")); ?>
 </section>
-<script>
-    // let body = document.querySelector(".site");
-    // let navActivee = false;
-    // function navigationCliquee(){
-    //     if(navActivee){
-    //         body.style.transform = "translateY(-100%)";
-    //     }
-    //     else{
-    //         body.style.transform = "translateY(0)";
-    //     }
-    //     navActivee = !navActivee;
-    // }
-</script>
