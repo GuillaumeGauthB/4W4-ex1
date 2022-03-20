@@ -652,10 +652,6 @@ COMPOSANTES
   text-align: center;
 }
 
-.erreur-404 {
-  background-color: #fff;
-}
-
 .erreur-404 h1 {
   font-size: 5rem;
 }
@@ -727,13 +723,13 @@ html {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200%;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   background-color: #d41c1c;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(55% 0, 100% 0, 46% 47%, 100% 100%, 54% 100%, 0 48%);
   z-index: -1;
 }
 
@@ -751,7 +747,7 @@ html {
   box-shadow: 5px 5px 20px #808080;
 }
 
-.principal, .main__single-post {
+.principal, .main__single-post, .site__main {
   grid-area: main;
   background-color: #dedede;
   padding: 10px 15px 10px 15px;
@@ -932,5 +928,9 @@ ANIMATION
   to {
     filter: hue-rotate(360deg);
   }
+}
+
+.rgb-animation {
+  animation: changerCouleur 0.5s infinite;
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@ function cidw_4w4_register_nav_menu(){
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
         'menu_lien__externe'  => __( 'Menu lien externe', 'cidw_4w4' ),
+        'menu_frontpage' => __('Menu front page', 'cidw_4w4'),
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );

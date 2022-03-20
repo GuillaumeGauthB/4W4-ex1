@@ -34,7 +34,45 @@
                 DANGER: CE BOUTON ACTIVE LA RGB || ACTIVER AVEC PRÉCAUTION (en construction)
             </label>
         </section> -->
+        <section class="footer__bouton-rgb">
+                <button onclick="rgb()" id="bouton-rgb">DANGER: CE BOUTON ACTIVE LA RGB</button>
+        </section>
     </div>
+    <script>
+        let rgbActivee = false;
+        bouton = document.querySelector("#bouton-rgb");
+        let corps = [
+            document.querySelector(".principal"),
+            document.querySelector(".main__single-post"),
+            document.querySelector(".site__main")
+        ]
+        let tout = document.querySelectorAll("*");
+        
+        function rgb(){
+            if(!rgbActivee){
+                rgbActivee = true;
+                for(i=0; i<tout.length;i++){
+                    // tout[i].style.animation = "changerCouleur .5s infinite";
+                    tout[i].classList.add("rgb-animation");
+                    // console.log(i)
+                }
+                for(i=0;i<corps.length;i++){
+                    corps[i].style.background = "hsl(187, 100%, 50%)";
+                }
+            }
+            else{
+                rgbActivee = false;
+                for(i=0; i<tout.length;i++){
+                    // tout[i].style.animation = "changerCouleur .5s infinite";
+                    tout[i].classList.remove("rgb-animation");
+                    // console.log(i)
+                }
+                for(i=0;i<corps.length;i++){
+                    corps[i].style.background = "#dedede";
+                }
+            }
+        }
+    </script>
 </footer>
 <div class="barre-recherche">
     <?php wp_footer() ?>
