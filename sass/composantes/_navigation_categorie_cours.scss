@@ -1,0 +1,14 @@
+/* -------------------------------------------------
+Navigation catégorie cours
+---------------------------------------------------- */
+.menu-categorie_cours-container {  // nav
+    .menu {   // ul
+            display : flex;
+            justify-content: space-around;
+            .menu-item a{ // li
+                padding:10px;
+                border-radius:5px;
+            }
+        }
+
+    }

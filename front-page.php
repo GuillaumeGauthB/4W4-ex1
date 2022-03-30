@@ -1,6 +1,11 @@
 <?php get_header() ?>
 <main class="principal">
     <h1 id="formation__h1">----------------front-page--------------------</h1>
+    <section class="menu-accueil-container">
+    <?php  wp_nav_menu(array(
+            "menu"=>"categorie_cours",
+            "container" => "nav"));  ?>
+    </section>
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">

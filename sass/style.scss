@@ -25,6 +25,7 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balise";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -36,6 +37,7 @@ COMPOSANTES
 @import "composantes/erreur_404";
 @import "composantes/single-post";
 @import "composantes/recherche";
+@import "composantes/navigation_categorie_cours";
 
 /* ---------------------------------------------------------
 LAYOUT

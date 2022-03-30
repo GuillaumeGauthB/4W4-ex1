@@ -3,8 +3,8 @@
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    wp_enqueue_style('cidw-4w4-police-google', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Palette+Mosaic&family=Ubuntu+Mono&display=swap', false);
 }
-
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 
 /* -------------------------------------------------- Enregistré le menu */
@@ -112,5 +112,21 @@ function my_register_sidebars() {
         )
     );
     /* Repeat register_sidebar() code for additional sidebars. */
+}
+
+/* ----------------------------------------------------------------- */
+function trouve_la_categorie($tableau){
+    foreach($tableau as $cle){
+        if(is_category($cle)) return($cle);
+    }
+}
+
+// ---------------------------------------------------------- Prefix nav description
+function prefix_nav_description( $item_output, $item,  $args ) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( $args->link_after . '</a>',
+        $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+              $item_output );
+    }
 }
 ?>

@@ -345,7 +345,7 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #abc355;
 }
 
 a:visited {
@@ -382,6 +382,14 @@ a:hover, a:active {
 
 .site__footer a:hover, .site__footer a:active {
   outline: 0;
+}
+
+h1, h2 {
+  font-family: "Palette Mosaic", "sans-serif";
+}
+
+h3, h3 {
+  font-family: "Montserrat", "sans-serif";
 }
 
 /* ---------------------------------------------------------
@@ -508,7 +516,7 @@ COMPOSANTES
 
 .site__header .header__description {
   font-size: 0.8rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Ubuntu Mono", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 @media screen and (min-width: 800px) {
@@ -625,9 +633,20 @@ COMPOSANTES
 
 .site__footer__colonne barre {
   background-color: white;
-  width: 3px;
-  height: 240px;
+  width: 80%;
+  height: 3px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne barre {
+    width: 3px;
+    height: 320px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .site__footer__colonne section {
@@ -773,6 +792,19 @@ COMPOSANTES
   }
 }
 
+/* -------------------------------------------------
+Navigation catégorie cours
+---------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -782,7 +814,7 @@ html {
 
 .site {
   background-color: #2e3440;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Ubuntu Mono", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site::after {
