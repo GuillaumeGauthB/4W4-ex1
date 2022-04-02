@@ -1,25 +1,48 @@
-/**
-Theme name: Lab3 Guillaume Gauthier-Benoit
+/*
+Theme name: 2022-4W4 Guillaume Gauthier-Benoit
+Author: Guillaume Gauthier-Benoit
+Author URI: https://github.com/GuillaumeGauthB/4W4-main
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/guillaumegauthb/4w4-main
+Version: 1.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+Text Domain: cidw-4w4
 */
-/* ---------------INITIALISATION---------- */
-@import "initialisation/_normalize";
-@import "initialisation/_boxsize";
-/* -----------------------------------------------------------------
+/* ---------------------------------------------------------
 VARIABLES
-------------------------------------------------------------------- */
+--------------------------------------------------------- */
 @import "variables/couleurs";
-@import "variables/structure";
 @import "variables/typo";
-/* -------------------LAYOUT---------- */
-@import "layout/_layout";
-/* -----------------------------------------------------------------
-ELEMENTS
-------------------------------------------------------------------- */
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
 @import "elements/links";
-/* -----------------------------------------------------------------
-COMPOSANTS
-------------------------------------------------------------------- */
-@import "composants/cours";
-@import "composants/entete";
-@import "composants/footer";
-@import "composants/navigation";
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/contenu";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/footer";
+@import "composantes/erreur_404";
+@import "composantes/single-post";
+@import "composantes/recherche";
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "composantes/animation";

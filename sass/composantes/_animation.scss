@@ -1,0 +1,111 @@
+#animation_1 #block-9 ul{
+    display:flex;
+    justify-content: space-around;
+    li{
+        transform: translateY(-130vh);
+        width: 100px;
+        height: 100px;
+        background-color: deepskyblue;
+        border: 1px solid black;
+        border-radius: 100%;
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        a{
+            text-align:center;
+            svg{
+                transform:scale(2);
+                color:#2e3440;
+            }
+        }
+        @for $i from 1 through 5{
+            &:nth-of-type(#{$i}){
+                animation: animerFront 5s infinite;
+                animation-delay: #{$i*0.5s};
+            }
+        }
+    }
+}
+
+// .animation div{
+//     @for $i from 1 through 5{
+//         &:nth-of-type(#{$i}){
+//             animation: animerFront 5s infinite;
+//             animation-delay: #{$i*0.5s};
+//         }
+//     }
+// }
+
+.wp-block-social-links li{
+    @for $i from 1 through 6{
+        &:nth-of-type(#{$i}){
+            animation:disparitionTemp 4s infinite;
+            animation-delay: #{$i * 0.2}s;
+        }
+    }
+}
+.header__description{animation:flasherTitre 2s infinite}
+#formation__h1{animation:frontPageTitreDeplacement 8s infinite}
+// #chk-rgb:checked{
+//     & ~ *{
+//         animation: changerCouleur .5s infinite;
+//     }
+//     & ~ main.principal{
+//         background-color: $color__background-main-rgb;
+//     }
+// }
+
+@keyframes animerFront{
+    0%{
+        transform: translateY(-130vh);
+        @media screen and (min-width:$largeur__media--tablette){
+            transform: translateY(-100vh);
+        }
+    }
+    30%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(130vh);
+        @media screen and (min-width:$largeur__media--tablette){
+            transform: translateY(100vh);
+        }
+    }
+}
+
+@keyframes flasherTitre{
+    from{color:orange}
+    50%{color:white}
+    to{color:orange}
+}
+
+@keyframes disparitionTemp{
+    from{opacity: 100%}
+    50%{opacity: 0;}
+    to{opacity: 100%}
+}
+@keyframes frontPageTitreDeplacement{
+    from{transform: translateY(0) translateX(0);}
+    20%{transform: translateY(-15vh) translateX(0);}
+    40%{transform: translateY(-15vh) translateX(30vw);}
+    60%{transform: translateY(50vh) translateX(30vw);}
+    80%{transform: translateY(50vh) translateX(0vw);}
+    to{transform: translateY(0) translateX(0);}
+}
+
+@keyframes changerCouleur{
+    from{filter:hue-rotate(0deg)}
+    to{filter:hue-rotate(360deg)}
+}
+.rgb-animation{
+    animation: changerCouleur 0.5s infinite;
+    // @for $i from 1 through 214{
+    //     &:nth-of-type(#{$i}){
+    //         animation-delay: #{$i*0.5}s;
+    //     }
+    // }
+}
+

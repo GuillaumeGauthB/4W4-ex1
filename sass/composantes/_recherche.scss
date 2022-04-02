@@ -1,0 +1,22 @@
+.recherche{
+    display:flex;
+    flex-flow:row nowrap;
+    &__text{
+        color:$color__font-footer;
+    }
+    &__submit{
+        background-color:$color__font-header;
+        svg{
+            color:rgb(255, 255, 255);
+        }
+    }
+}
+.util{
+    margin-bottom: 5px;
+    .recherche__text{
+        width:80vw;
+        @media screen and (min-width:$largeur__media--tablette){
+            width: 20vw;
+        }
+    }
+}
