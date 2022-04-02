@@ -30,13 +30,31 @@
     }
 }
 #chk-burger:checked ~ .menu-principal-container{
-    // top:0;
+    top:0;
     height:100%;
     & > ul{
         transform:translateY(0);
     }
 }
 
+// .ouvertureMenu{}
+// .fermetureMenu{}
+
+// @keyframes ouvrirMenu{
+//     @for $i from 0 through 100{
+//         #{100% / $i}{
+//             height:#{100% / $i};
+//         }
+//     }
+// }
+
+// @keyframes fermetureMenu{
+//     @while i < 101{
+//         #{100% / $i}{
+//             height:$i;
+//         }
+//     }
+// }
 
 .menu-principal-container{}
 .menu{
