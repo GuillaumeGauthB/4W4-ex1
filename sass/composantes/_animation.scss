@@ -1,6 +1,7 @@
 #animation_1 #block-9 ul{
     display:flex;
     justify-content: space-around;
+    z-index:2;
     li{
         transform: translateY(-130vh);
         width: 100px;
@@ -100,8 +101,18 @@
     from{filter:hue-rotate(0deg)}
     to{filter:hue-rotate(360deg)}
 }
+
+@keyframes tourner{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
 .rgb-animation{
     animation: changerCouleur 0.5s infinite;
+    // animation: tourner 1s infinite;
     // @for $i from 1 through 214{
     //     &:nth-of-type(#{$i}){
     //         animation-delay: #{$i*0.5}s;

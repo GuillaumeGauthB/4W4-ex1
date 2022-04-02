@@ -345,11 +345,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #abc355;
 }
 
 a:visited {
-  color: #ff5100;
+  color: #bb3c02;
 }
 
 a:hover, a:focus, a:active {
@@ -384,6 +384,47 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1, h2 {
+  font-family: "Palette Mosaic", "sans-serif";
+}
+
+h3, h3 {
+  font-family: "Montserrat", "sans-serif";
+}
+
+a {
+  font-family: "Helvetica", "sans-serif";
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -413,7 +454,7 @@ COMPOSANTES
 .formation__cours {
   background-color: #2e3440;
   color: white;
-  box-shadow: #394044 1px -1px 10px;
+  box-shadow: #a11717 3px 3px 0px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -500,6 +541,13 @@ COMPOSANTES
   text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+  .site__header .header__titre a {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .site__header .header__titre {
     text-align: left;
@@ -508,7 +556,7 @@ COMPOSANTES
 
 .site__header .header__description {
   font-size: 0.8rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Ubuntu Mono", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 @media screen and (min-width: 800px) {
@@ -562,6 +610,7 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ .menu-principal-container {
+  top: 0;
   height: 100%;
 }
 
@@ -625,9 +674,20 @@ COMPOSANTES
 
 .site__footer__colonne barre {
   background-color: white;
-  width: 3px;
-  height: 240px;
+  width: 80%;
+  height: 3px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne barre {
+    width: 3px;
+    height: 320px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .site__footer__colonne section {
@@ -773,6 +833,19 @@ COMPOSANTES
   }
 }
 
+/* -------------------------------------------------
+Navigation catégorie cours
+---------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -782,7 +855,7 @@ html {
 
 .site {
   background-color: #2e3440;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Ubuntu Mono", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site::after {
@@ -846,6 +919,7 @@ ANIMATION
 #animation_1 #block-9 ul {
   display: flex;
   justify-content: space-around;
+  z-index: 2;
 }
 
 #animation_1 #block-9 ul li {
@@ -1004,6 +1078,15 @@ ANIMATION
   }
   to {
     filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes tourner {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
   }
 }
 

@@ -1,0 +1,31 @@
+h1, h2{
+    font-family: $police__h1;
+}
+h3, h3{font-family: $police__h4;}
+
+a{font-family: $police__liens;
+font-weight: bold;
+}
+
+h1{
+    font-size: clamp(2rem, 3vw, 5rem);
+}
+h2{
+    font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3{
+    font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4{
+    font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+h5{
+    font-size: clamp(1rem, 2vw, 2.2rem);
+}
+h6{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p { font-size: clamp(1rem, 1.5vw, 1.5rem);}
