@@ -1,6 +1,7 @@
 #animation_1 #block-9 ul{
     display:flex;
     justify-content: space-around;
+    z-index:2;
     li{
         transform: translateY(-130vh);
         width: 100px;

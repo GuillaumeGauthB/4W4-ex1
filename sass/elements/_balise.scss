@@ -3,6 +3,10 @@ h1, h2{
 }
 h3, h3{font-family: $police__h4;}
 
+a{font-family: $police__liens;
+font-weight: bold;
+}
+
 h1{
     font-size: clamp(2rem, 3vw, 5rem);
 }
