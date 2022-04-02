@@ -1039,7 +1039,17 @@ ANIMATION
   }
 }
 
+@keyframes tourner {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .rgb-animation {
   animation: changerCouleur 0.5s infinite;
+  animation: tourner 1s infinite;
 }
 /*# sourceMappingURL=style.css.map */
