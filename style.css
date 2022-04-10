@@ -836,12 +836,12 @@ COMPOSANTES
 /* -------------------------------------------------
 Navigation catégorie cours
 ---------------------------------------------------- */
-.menu-categorie_cours-container .menu {
+.menu-categorie-cours-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-categorie_cours-container .menu .menu-item a {
+.menu-categorie-cours-container .menu .menu-item a {
   padding: 10px;
   border-radius: 5px;
 }
