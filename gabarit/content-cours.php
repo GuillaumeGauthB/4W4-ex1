@@ -10,7 +10,7 @@
     <?php          
     $titre = get_the_title();
     $titreFiltreCours = substr($titre, 4, -6);
-    $nbHeures = substr($titre, -6). " heures";
+    $nbHeures = get_field("nombre_dheures") . " heures";
     $sigleCours = substr($titre, 0, 3);
     $descCours = get_the_excerpt();
     ?>

@@ -10,12 +10,13 @@ add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 /* -------------------------------------------------- Enregistré le menu */
 function cidw_4w4_register_nav_menu(){
     register_nav_menus( array(
-        'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
-        'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
+        'menu_principal'     => __( 'Menu principal', 'cidw_4w4' ),
+        'menu_footer'        => __( 'Menu footer', 'cidw_4w4' ),
         'menu_lien__externe'  => __( 'Menu lien externe', 'cidw_4w4' ),
-        'menu_frontpage' => __('Menu front page', 'cidw_4w4'),
-        'menu_accueil' => __('Menu accueil', 'cidw_4w4'),
-    ) );
+        'menu_frontpage'    => __('Menu front page', 'cidw_4w4'),
+        'menu_accueil'      => __('Menu accueil', 'cidw_4w4'),
+        'departement'       => __('Département TIM', 'cidw-4w4'),
+        'evenements'        => __('Les évènements à venir', 'cidw-4w4')));
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 
@@ -158,33 +159,26 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
    }
  
 
-/*
-  if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+
+  if (is_admin() && !is_main_query() && !is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
     {
-    //$ordre = get_query_var('ordre');
-    $query->set('posts_per_page', -1);
-    // $query->set('orderby', $cle);
-    $query->set('orderby', 'title');
-    // $query->set('order',  $ordre);
-    $query->set('order',  'ASC');
-    // var_dump($query);
-    // die();
-   }
-  */ 
+        return $query;
+    }        
+    else
+    {
+        $ordre = get_query_var('ordre');
+        $cle = get_query_var('cletri');       
+        $query->set('order',  $ordre);
+        $query->set('orderby', $cle);
+
+        $query->set('postperpage','-1');
+        return $query;
+    }
+  
 }
 function cidw_4w4_query_vars($params){
-
-
     $params[] = "cletri";
     $params[] = "ordre";
-    /*
-    $params["cletri"] = "title";
-    var_dump($params); die();
-    */
-
-
-
-
     return $params;
 }
 add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');

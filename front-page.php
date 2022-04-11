@@ -1,17 +1,23 @@
-<?php get_header() ?>
-<main class="principal">
+<?php get_header(); ?>
+<main class="site__main home">
     <section class="">
         <?php 	get_sidebar('animation_1'); ?>
     </section>
-    <h1 id="formation__h1">----------------front-page--------------------</h1>
-    <?php wp_nav_menu(array(
-        "menu"=> "menu_accueil",
-        "container" => "nav")); ?>
-    <h1>---- Front-page.php ------</h1>
-   <?php if (have_posts()): the_post(); ?>
-        <?php the_title() ?>
-        <?php the_content() ?>   
-  
-   <?php endif ?>
+    <h1 class="site__main__titre home__titre">Accueil</h1>
+
+    <section class="navigation__ecole">
+        <?php
+            wp_nav_menu(array(
+                "menu" => "departement",
+                "container" => "nav",
+                "container_class" => "departement__menu"
+            ));
+            wp_nav_menu(array(
+                "menu" => "evenements",
+                "container" => "nav",
+                "container_class" => "evenements__menu"
+            ));
+        ?>
+    </section>
 </main>
-<?php get_footer() ?>
+<?php get_footer(); ?>
