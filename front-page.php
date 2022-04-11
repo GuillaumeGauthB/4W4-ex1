@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main class="site__main home">
+    <?php include ("inclusions/caroussel.php")?>
     <section class="">
         <?php 	get_sidebar('animation_1'); ?>
     </section>

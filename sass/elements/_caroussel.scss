@@ -1,0 +1,181 @@
+/*==================================================================== CLASSES DIVERSES ==============*/
+:root{
+    --hcaroussel-large: 89.5vh;
+    --width-caroussel: 100%;
+  }
+  
+  /*==================================================================== APPARENCE DU CAROROUSSEL ======*/
+  .caroussel {
+      position: relative;
+      z-index: 1;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows:1fr;
+      grid-template-areas: "car1 car2 car3";
+      gap:5vw;
+      .boites{
+        display:grid;
+        width:var(--width-caroussel);
+        box-shadow: var(--ombre);
+    
+          @for $i from 1 through 3{
+            .boites:nth-of-type(#{$i}){
+                grid-area: car#{$i};
+            }
+          }
+        }
+    }
+    .caroussel-img{
+      grid-area: img;
+    }
+    
+    .caroussel-reste{
+      grid-area: txt;
+    }
+    
+    .caroussel-img img, .caroussel-img li figure img{
+      object-fit: cover;
+    }
+  
+    .derniere, .prochaine{
+      cursor: pointer;
+      position: absolute;
+      width: 100vw;
+      top: 48%;
+      width: auto;
+      margin-top: -23px;
+      padding: 17px;
+      color: white;
+      font-weight: bold;
+      font-size: 19px;
+      transition: 0.4s ease;
+      border-radius: 0 5px 5px 0;
+      user-select: none;
+      background-color: rgba(128, 128, 128, 0.342);
+    }
+  
+    .prochaine {
+        border-radius: 4px 0 0 4px;
+    }
+  
+    #caroussel{
+      transition: transform 2s;
+    }
+  
+    .derniere:hover, .prochaine:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.4s;
+      animation-name: fade;
+      animation-duration: 1.4s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .5}
+      to {opacity: 2}
+    }
+    
+    @keyframes fade {
+      from {opacity: .5}
+      to {opacity: 2}
+    }
+  
+    /*================================================== TEXTE DU CARROUSEL ==================*/
+    .boites .caroussel-reste{
+      grid-area: txt;
+      background-color:rgb(70, 70, 70);
+      color: white;
+      display: flex;
+      flex-flow:column nowrap;
+      justify-content: space-between;
+      width: 30vw;
+    }
+    
+    .caroussel-titre{
+      text-align:center;
+      font-size: 2rem;
+    }
+  
+    .caroussel-texte{
+      text-align: justify;
+      font-size: 1.3rem;
+      line-height: 5vh;
+      margin: 0 10%;
+    }
+  
+    .caroussel-footer{
+      text-align: center;
+      margin: 1% 2%;
+    }
+  
+    .caroussel-footer .caroussel-date{
+      text-align:right;
+    }
+  
+    .caroussel-lien{
+      color:white;
+      font-size: 1.5rem;
+    }
+  
+  /*==================================================================== MEDIAS QUERIES ======*/
+  
+  /*==================================================================== VERSION TÉLÉPHONE ======*/
+    @media (max-width:576px){
+      .boites{
+        grid-template-rows: 1fr 2fr;
+      }  
+    }/* FIN DE LA VERSION TÉLÉPHONE */
+  
+  /*==================================================================== VERSION MIXTE TÉLÉPHONE ET TABLETTE ======*/
+    @media (max-width: 992px){
+      .boites{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.2fr;
+        grid-template-areas: "img" "txt";
+      }
+  
+      .caroussel-img img, .caroussel-img li figure img{
+        width:var(--width-caroussel);
+        height: 60vh;
+      }
+
+      .boites .caroussel-reste{
+        height: auto;
+      }
+  
+      .prochaine{
+          margin-right: 0;
+          margin-left:auto;
+      }
+  
+      .caroussel-date{
+        margin-right:5px;
+      }
+  
+      .prochaine{
+        position:relative;
+        right:0.5em;
+        top:21px;
+      }
+    }/* FIN DE LA VERSION MIXTE TÉLÉPHONE ET TABLETTE */
+  
+  /*==================================================================== VERSION GRAND ÉCRAN ======*/
+    @media (min-width: 993px){
+      .boites{
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "img txt";
+      }
+  
+      .caroussel-img img{
+        height:var(--hcaroussel-large);
+        width:43vw;
+      }
+  
+      .boites .caroussel-reste{
+        height:var(--hcaroussel-large);
+      }
+    }/* FIN DE LA VERSION GRAND ÉCRAN */

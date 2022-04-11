@@ -114,6 +114,39 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+    register_sidebar(
+        array(
+            'id'            => 'caroussel_image_1',
+            'name'          => __( 'Caroussel image 1' ),
+            'description'   => __( 'Images des caroussels' ),
+            // 'before_widget' => '<div id="%1$s" class="animation widget %2$s">',
+            // 'after_widget'  => '</div>',
+            // 'before_title'  => '<h3 class="widget-title">',
+            // 'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'caroussel_image_2',
+            'name'          => __( 'Caroussel image 2' ),
+            'description'   => __( 'Images des caroussels' ),
+            // 'before_widget' => '<div id="%1$s" class="animation widget %2$s">',
+            // 'after_widget'  => '</div>',
+            // 'before_title'  => '<h3 class="widget-title">',
+            // 'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'caroussel_image_3',
+            'name'          => __( 'Caroussel image 3' ),
+            'description'   => __( 'Images des caroussels' ),
+            // 'before_widget' => '<div id="%1$s" class="animation widget %2$s">',
+            // 'after_widget'  => '</div>',
+            // 'before_title'  => '<h3 class="widget-title">',
+            // 'after_title'   => '</h3>',
+        )
+    );
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 
