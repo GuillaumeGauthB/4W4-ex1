@@ -426,19 +426,19 @@ p {
 }
 
 .navigation__ecole {
-  background-color: #00b6d6;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 .navigation__ecole__menu ul {
   display: flex;
   flex-flow: column nowrap;
+  box-shadow: 2px 2px 0 #d41c1c;
 }
 
 .navigation__ecole__menu ul li {
-  width: 400px;
+  width: 300px;
 }
 
 /* ---------------------------------------------------------
