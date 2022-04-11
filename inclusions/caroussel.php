@@ -7,7 +7,7 @@
         <div class="caroussel-reste">
             <a class="prochaine" onclick="plusSlides(1)">&#10095;</a>
             <h2 class="caroussel-titre">Nouveau président du Comité TIM</h2>
-            <div class="caroussel-texte">Vous pouvez maintenant trouver toutes les informations pertinentes sur le métier de <span class="souligner gras">technicien(ne) en pharmacie</span> ici, à portée de votre souris! Vous pouvez y trouver le salaire, le niveau d'éducation nécessaire et beaucoup plus en cliquant sur le lien si dessous!</div>
+            <div class="caroussel-texte">Un nouveau président du comité à récemment été élu! L'heureux élu est le malheureux Pierre-Olivier Clerson, qui était la seule présente à l'élection! Malgré les propos du jeune homme, qui exclamait qu'il n'allait rien dire à la police s'il était sur le champ, il a tout de même été élu avec taux de vote de 100%. Félicitation Pierre-Olivier.</div>
             <div class="caroussel-footer">
                 <a href="page-introuvable.php" class="caroussel-lien">Pour en savoir plus >></a>
                 <div class="caroussel-date">Février 2021</div>
@@ -21,8 +21,8 @@
         </div>
         <div class="caroussel-reste">
             <a class="prochaine" onclick="plusSlides(2)">&#10095;</a>
-            <h2 class="caroussel-titre">Offre d'emploi!</h2>
-            <div class="caroussel-texte">Vous pouvez maintenant trouver toutes les informations pertinentes sur les métiers de <span class="souligner gras">bartender</span>, d'<span class="souligner gras">opérateur(trice) de machinerie légère</span> et de <span class="souligner gras">préposé au service automobile</span> ici, à portée de votre souris! Vous pouvez y trouver le salaire, le niveau d'éducation nécessaire et beaucoup plus en cliquant sur le lien si dessous!</div>
+            <h2 class="caroussel-titre">Nouvelle offre de stage!</h2>
+            <div class="caroussel-texte">Une nouvelle offre de stage est récemment arrivée pour les étudiants de 2ème année! Les emplyoeurs, les Crips, sont à la recherche de deux sstagiaires ayant des compétences en PHP et en Javascript pour l'intégration de leur nouveau site web! Ils ne sont malheureusement prêt à payer que 12$ de l'heure, mais cette expérience vous sera inoubliable et très bonne pour votre CV.</div>
             <div class="caroussel-footer">
                 <a href="page-introuvable.php" class="caroussel-lien">Pour en savoir plus >></a>
                 <div class="caroussel-date">Décembre 2020</div>
@@ -36,11 +36,11 @@
         </div>
         <div class="caroussel-reste">
             <a class="prochaine" onclick="plusSlides(3)">&#10095;</a>
-            <h2 class="caroussel-titre">Bonne année 2020!</h2>
-            <div class="caroussel-texte">Joyeux Nouvel An à tous! Souhaitons que l'année 2020 soit aussi plaisante que 2019!</div>
+            <h2 class="caroussel-titre">Bonne année 2021!</h2>
+            <div class="caroussel-texte">Joyeux Nouvel An à tous! Souhaitons que cette année va être aussi joyeuse que la dernière, avec tout les évènements plaisants s'ayant produits cette année. Ah, comme je vais m'ennuyer de cette merveilleuse année.</div>
             <div class="caroussel-footer">
                 <a href="page-introuvable.php" class="caroussel-lien">Pour en savoir plus >></a>
-                <div class="caroussel-date">Janvier 2020</div>
+                <div class="caroussel-date">Janvier 2021</div>
             </div>
         </div>
     </div>

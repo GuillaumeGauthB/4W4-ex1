@@ -484,7 +484,7 @@ p {
   grid-area: txt;
 }
 
-.caroussel-img img, .caroussel-img li figure img {
+.caroussel-img img {
   object-fit: cover;
 }
 
@@ -551,7 +551,7 @@ p {
 
 .caroussel-texte {
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   line-height: 5vh;
   margin: 0 10%;
 }
@@ -586,7 +586,7 @@ p {
     grid-template-rows: 1fr 1.2fr;
     grid-template-areas: "img" "txt";
   }
-  .caroussel-img img, .caroussel-img li figure img {
+  .caroussel-img img {
     width: var(--width-caroussel);
     height: 60vh;
   }
