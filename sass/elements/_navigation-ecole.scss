@@ -1,0 +1,13 @@
+.navigation__ecole {
+    background-color: rgb(0, 182, 214);
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    &__menu ul{
+        display:flex;
+        flex-flow: column nowrap;
+        li{
+            width:400px;
+        }
+    }
+}

@@ -425,6 +425,22 @@ p {
   font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
+.navigation__ecole {
+  background-color: #00b6d6;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.navigation__ecole__menu ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.navigation__ecole__menu ul li {
+  width: 400px;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */

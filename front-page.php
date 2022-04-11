@@ -10,12 +10,12 @@
             wp_nav_menu(array(
                 "menu" => "departement",
                 "container" => "nav",
-                "container_class" => "departement__menu"
+                "container_class" => "navigation__ecole__menu departement__menu"
             ));
             wp_nav_menu(array(
                 "menu" => "evenements",
                 "container" => "nav",
-                "container_class" => "evenements__menu"
+                "container_class" => "navigation__ecole__menu evenements__menu"
             ));
         ?>
     </section>
