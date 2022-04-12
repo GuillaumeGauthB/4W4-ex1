@@ -126,14 +126,22 @@
   /*==================================================================== MEDIAS QUERIES ======*/
   
   /*==================================================================== VERSION TÉLÉPHONE ======*/
-    @media (max-width:576px){
+    @media screen and (max-width:576px){
       .boites{
         grid-template-rows: 1fr 2fr;
+        & .caroussel-reste, & .caroussel-img{
+          width: 90vw;
+          height: inherit;
+          img{
+            width:100%;
+          }
+        }
       }  
-    }/* FIN DE LA VERSION TÉLÉPHONE */
+
+     }/* FIN DE LA VERSION TÉLÉPHONE */
   
-  /*==================================================================== VERSION MIXTE TÉLÉPHONE ET TABLETTE ======*/
-    @media (max-width: 992px){
+  // /*==================================================================== VERSION MIXTE TÉLÉPHONE ET TABLETTE ======*/
+    @media screen and (max-width: 992px){
       .caroussel{
         width:100%;
       }
@@ -142,10 +150,8 @@
         grid-template-rows: 1fr 1.2fr;
         grid-template-areas: "img" "txt";
       }
-  
+
       .caroussel-img{
-        // width:var(--width-caroussel);
-        // height: 60vh;
         width: 62vw;
         height: inherit;
         img{
@@ -153,9 +159,7 @@
         }
       }
 
-      .boites .caroussel-reste{
-        // height: auto;
-        // width:inherit;
+      .caroussel-reste{
         width: 62vw;
       }
   
@@ -176,7 +180,7 @@
     }/* FIN DE LA VERSION MIXTE TÉLÉPHONE ET TABLETTE */
   
   /*==================================================================== VERSION GRAND ÉCRAN ======*/
-    @media (min-width: 993px){
+    @media screen and (min-width: 993px){
       .boites{
         grid-template-columns: 3fr 2fr;
         grid-template-rows: 1fr;
