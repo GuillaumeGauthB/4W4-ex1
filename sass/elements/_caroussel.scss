@@ -13,6 +13,8 @@
       grid-template-rows:1fr;
       grid-template-areas: "car1 car2 car3";
       gap:5vw;
+      // box-shadow: 2px 2px 0 $color__background-body-clip;
+      width:100%;
       .boites{
         display:grid;
         width:var(--width-caroussel);
@@ -23,8 +25,9 @@
                 grid-area: car#{$i};
             }
           }
-        }
+      }
     }
+
     .caroussel-img{
       grid-area: img;
     }
@@ -131,19 +134,29 @@
   
   /*==================================================================== VERSION MIXTE TÉLÉPHONE ET TABLETTE ======*/
     @media (max-width: 992px){
+      .caroussel{
+        width:100%;
+      }
       .boites{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1.2fr;
         grid-template-areas: "img" "txt";
       }
   
-      .caroussel-img img{
-        width:var(--width-caroussel);
-        height: 60vh;
+      .caroussel-img{
+        // width:var(--width-caroussel);
+        // height: 60vh;
+        width: 62vw;
+        height: inherit;
+        img{
+          width:100%;
+        }
       }
 
       .boites .caroussel-reste{
-        height: auto;
+        // height: auto;
+        // width:inherit;
+        width: 62vw;
       }
   
       .prochaine{
@@ -157,8 +170,8 @@
   
       .prochaine{
         position:relative;
-        right:0.5em;
-        top:21px;
+        // right:0.5em;
+        top:22px;
       }
     }/* FIN DE LA VERSION MIXTE TÉLÉPHONE ET TABLETTE */
   
