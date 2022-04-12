@@ -112,21 +112,13 @@
     }
 }
 
-@keyframes tourner{
-    from{
-        transform: translateZ(0);
-    }
-    from{
-        transform: translateZ(100%);
-    }
-}
 .rgb-animation{
     animation: changerCouleur 0.5s infinite;
-    animation: tourner 1s infinite;
-    @for $i from 1 through 214{
-        &:nth-of-type(#{$i}){
-            animation-delay: #{$i*0.5}s;
-        }
-    }
+    // animation: tourner 1s infinite;
+    // @for $i from 1 through 214{
+    //     &:nth-of-type(#{$i}){
+    //         animation-delay: #{$i*0.5}s;
+    //     }
+    // }
 }
 

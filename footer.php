@@ -40,7 +40,8 @@
         let corps = [
             document.querySelector(".principal"),
             document.querySelector(".main__single-post"),
-            document.querySelector(".site__main")
+            document.querySelector(".site__main"),
+            document.querySelector(".home")
         ]
         let tout = document.querySelectorAll("*");
         
@@ -53,7 +54,9 @@
                     // console.log(i)
                 }
                 for(i=0;i<corps.length;i++){
-                    corps[i].style.background = "hsl(187, 100%, 50%)";
+                    if(corps[i] != null){
+                        corps[i].style.background = "hsl(187, 100%, 50%)";
+                    }
                 }
             }
             else{
