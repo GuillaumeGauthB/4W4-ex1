@@ -1,15 +1,20 @@
 .site__header {
   padding-right:20px;
-    max-width: 100vw;
-    background-color: $color__background-header;
-    color: $color__font-header;
-    padding-left: 10px;
-    display:flex;
-    align-items:center;
-    flex-flow: column nowrap;
-    &__titre{
+  max-width: 100vw;
+  background-color: $color__background-header;
+  color: $color__font-header;
+  padding-left: 10px;
+  display:flex;
+  align-items:center;
+  flex-flow: column nowrap;
+    .header__titre{
       display:flex;
       align-items:center;
+      border: 2px solid black;
+      width: 25vw;
+      a {
+        height:auto;
+      }
     }
     @media screen and (min-width:$largeur__media--tablette){
       flex-flow: row nowrap;

@@ -725,9 +725,15 @@ COMPOSANTES
   flex-flow: column nowrap;
 }
 
-.site__header__titre {
+.site__header .header__titre {
   display: flex;
   align-items: center;
+  border: 2px solid black;
+  width: 25vw;
+}
+
+.site__header .header__titre a {
+  height: auto;
 }
 
 @media screen and (min-width: 800px) {
