@@ -15,7 +15,7 @@
 <body  <?php body_class("site"); ?>>
 <header class="site__header">
     <section class="titre">
-        <h1 class="header__titre"> <a href="<?php echo esc_url( home_url('/'));?>"><?php 	the_custom_logo() ?><?php bloginfo('name'); ?> </a> </h1>
+        <h1 class="header__titre"> <a href="<?php echo esc_url( home_url('/'));?>"><?php 	get_custom_logo() //the_custom_logo ?><?php bloginfo('name'); ?> </a> </h1>
         <h2 class="header__description"><?php bloginfo('description'); ?></h2>
     </section>
     <div class="util">

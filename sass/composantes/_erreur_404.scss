@@ -1,11 +1,17 @@
-.erreur-404{
-    h1{
-        font-size: 5rem;
-    }
-    h2{
-        font-size: 2.5rem;
-    }
-    p{
-        font-size: 1.5rem;
+.site__main{
+    background: url('https://cdn.discordapp.com/attachments/882615478453928116/963233950757691412/20220411_202738.jpg');
+    background-size: cover;
+    background-position-y: -350px;
+    .erreur-404{
+        background: rgba(245, 245, 245, 0.493);
+        h1{
+            font-size: 5rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
     }
 }
