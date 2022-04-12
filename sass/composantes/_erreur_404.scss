@@ -1,9 +1,10 @@
-.site__main{
+.main__404{
     background: url('https://cdn.discordapp.com/attachments/882615478453928116/963233950757691412/20220411_202738.jpg');
     background-size: cover;
     background-position-y: -350px;
     .erreur-404{
         background: rgba(245, 245, 245, 0.493);
+        padding-left: 10px;
         h1{
             font-size: 5rem;
         }

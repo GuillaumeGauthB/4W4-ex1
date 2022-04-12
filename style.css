@@ -980,25 +980,26 @@ COMPOSANTES
   text-align: center;
 }
 
-.site__main {
+.main__404 {
   background: url("https://cdn.discordapp.com/attachments/882615478453928116/963233950757691412/20220411_202738.jpg");
   background-size: cover;
   background-position-y: -350px;
 }
 
-.site__main .erreur-404 {
+.main__404 .erreur-404 {
   background: rgba(245, 245, 245, 0.493);
+  padding-left: 10px;
 }
 
-.site__main .erreur-404 h1 {
+.main__404 .erreur-404 h1 {
   font-size: 5rem;
 }
 
-.site__main .erreur-404 h2 {
+.main__404 .erreur-404 h2 {
   font-size: 2.5rem;
 }
 
-.site__main .erreur-404 p {
+.main__404 .erreur-404 p {
   font-size: 1.5rem;
 }
 
