@@ -16,6 +16,7 @@
       // box-shadow: 2px 2px 0 $color__background-body-clip;
       width:100%;
       .boites{
+        border: 2px solid $color__background-body-clip;
         display:grid;
         width:var(--width-caroussel);
         box-shadow: var(--ombre);

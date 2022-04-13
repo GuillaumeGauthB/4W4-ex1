@@ -460,6 +460,7 @@ p {
 }
 
 .caroussel .boites {
+  border: 2px solid #d41c1c;
   display: grid;
   width: var(--width-caroussel);
   box-shadow: var(--ombre);
