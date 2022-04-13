@@ -2,7 +2,9 @@
     // background-color: #3e4758;
     display:flex;
     flex-flow: row nowrap;
-    gap:40px;
+    justify-content: space-between;
+    max-width: 70vw;
+    // gap:40px;
     &__menu ul{
         display:flex;
         flex-flow: column nowrap;

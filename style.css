@@ -428,7 +428,8 @@ p {
 .navigation__ecole {
   display: flex;
   flex-flow: row nowrap;
-  gap: 40px;
+  justify-content: space-between;
+  max-width: 70vw;
 }
 
 .navigation__ecole__menu ul {

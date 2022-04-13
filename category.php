@@ -29,6 +29,8 @@
 
 
         ?>
+        <a href="?cletri=title&ordre=asc">Ascendant</a>
+        <a href="?cletri=title&ordre=desc">Descendant</a>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
