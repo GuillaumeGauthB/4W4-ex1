@@ -17,6 +17,7 @@
       .boites{
         border: 2px solid $color__background-header;
         box-shadow: 5px 5px 0 $color__background-body-clip;
+        background-color: #464646;
         display:grid;
         width:var(--width-caroussel);
     
