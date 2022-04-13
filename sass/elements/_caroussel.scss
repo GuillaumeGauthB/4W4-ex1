@@ -13,13 +13,12 @@
       grid-template-rows:1fr;
       grid-template-areas: "car1 car2 car3";
       gap:5vw;
-      // box-shadow: 2px 2px 0 $color__background-body-clip;
       width:100%;
       .boites{
-        border: 2px solid $color__background-body-clip;
+        border: 2px solid $color__background-header;
+        box-shadow: 5px 5px 0 $color__background-body-clip;
         display:grid;
         width:var(--width-caroussel);
-        box-shadow: var(--ombre);
     
           @for $i from 1 through 3{
             .boites:nth-of-type(#{$i}){

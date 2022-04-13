@@ -460,10 +460,10 @@ p {
 }
 
 .caroussel .boites {
-  border: 2px solid #d41c1c;
+  border: 2px solid #5d5d5f;
+  box-shadow: 5px 5px 0 #d41c1c;
   display: grid;
   width: var(--width-caroussel);
-  box-shadow: var(--ombre);
 }
 
 .caroussel .boites .boites:nth-of-type(1) {
