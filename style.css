@@ -728,17 +728,30 @@ COMPOSANTES
 .site__header .header__titre {
   display: flex;
   align-items: center;
-  border: 2px solid black;
-  width: 25vw;
 }
 
 .site__header .header__titre a {
-  height: auto;
+  margin-left: 25px;
+}
+
+.site__header .header__titre a img {
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
   .site__header {
     flex-flow: row nowrap;
+  }
+  .site__header .header__titre {
+    border: 2px solid black;
+    width: 25vw;
+  }
+  .site__header .header__titre a {
+    margin-left: 0px;
+    height: 100px;
+  }
+  .site__header .header__titre a img {
+    display: block;
   }
 }
 

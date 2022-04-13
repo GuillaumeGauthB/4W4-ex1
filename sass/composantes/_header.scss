@@ -10,14 +10,26 @@
     .header__titre{
       display:flex;
       align-items:center;
-      border: 2px solid black;
-      width: 25vw;
-      a {
-        height:auto;
+      a{
+        margin-left:25px;
+        img{
+          display: none;
+        }
       }
     }
     @media screen and (min-width:$largeur__media--tablette){
       flex-flow: row nowrap;
+      .header__titre{
+        border: 2px solid black;
+        width: 25vw;
+        a {
+          margin-left:0px;
+          height:100px;
+          img{
+            display: block;
+          }
+        }
+      }
     }
 
     .util{
