@@ -1105,6 +1105,12 @@ Navigation catégorie cours
   color: white;
   border-radius: 20px;
   z-index: 10;
+  transform: scale(0.1);
+  transition: 2s ease-in-out;
+}
+
+.boite__modale:hover {
+  transform: scale(1);
 }
 
 /* ---------------------------------------------------------
