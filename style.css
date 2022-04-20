@@ -1094,6 +1094,19 @@ Navigation catégorie cours
   border-radius: 5px;
 }
 
+.boite__modale {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  background-color: #4e4e4e;
+  border: 5px solid #2e3440;
+  color: white;
+  border-radius: 20px;
+  z-index: 10;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */

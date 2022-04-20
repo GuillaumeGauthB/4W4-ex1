@@ -67,7 +67,9 @@
                     // console.log(i)
                 }
                 for(i=0;i<corps.length;i++){
-                    corps[i].style.background = "#dedede";
+                    if(corps[i] != null){
+                        corps[i].style.background = "#dedede";
+                    }
                 }
             }
         }
@@ -85,6 +87,11 @@
 <div class="barre-recherche">
     <?php wp_footer() ?>
 </div>
-</body>
+<div class="boite__modale">
+    <article class="boite__modale__texte">
+        Ceci est un test pour verifier le fonctionnement de la boite modale
+    </article>
+</div>
 <?php 	wp_footer() ?>
+</body>
 </html>
