@@ -1,6 +1,6 @@
 // Le parent de la boite__modale est la balise body
 .boite__modale {
-    position: absolute;
+    position: fixed;
     width:50%;
     height:50%;
     top:25%;
@@ -10,9 +10,12 @@
     color:white;
     border-radius:20px;
     z-index:10;
-    transform: scale(0.1);
+    // transform: scale(0);
     transition:2s ease-in-out;
-    &:hover{
+    &--fermer{
+        transform: scale(0);
+    }
+    &--ouvert{
         transform: scale(1);
     }
 }

@@ -87,11 +87,6 @@
 <div class="barre-recherche">
     <?php wp_footer() ?>
 </div>
-<div class="boite__modale">
-    <article class="boite__modale__texte">
-        Ceci est un test pour verifier le fonctionnement de la boite modale
-    </article>
-</div>
 <?php 	wp_footer() ?>
 </body>
 </html>

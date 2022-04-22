@@ -1095,7 +1095,7 @@ Navigation catégorie cours
 }
 
 .boite__modale {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
   top: 25%;
@@ -1105,11 +1105,11 @@ Navigation catégorie cours
   color: white;
   border-radius: 20px;
   z-index: 10;
-  transform: scale(0.1);
+  transform: scale(0);
   transition: 2s ease-in-out;
 }
 
-.boite__modale:hover {
+.boite__modale--ouvert {
   transform: scale(1);
 }
 

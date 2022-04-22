@@ -14,6 +14,11 @@
 </head>
 <body  <?php body_class("site"); ?>>
 <header class="site__header">
+<div class="boite__modale boite__modale--fermer">
+    <article class="boite__modale__texte">
+        Ceci est un test pour verifier le fonctionnement de la boite modale
+    </article>
+</div>
     <section class="titre">
         <h1 class="header__titre"> <a href="<?php echo esc_url( home_url('/'));?>"><?php 	the_custom_logo(); ?></a> <a href="<?php echo esc_url( home_url('/'));?>"><?php bloginfo('name'); ?></a></h1>
         <h2 class="header__description"><?php bloginfo('description'); ?></h2>
