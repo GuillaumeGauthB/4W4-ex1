@@ -12,7 +12,7 @@
     <title>4W4</title>
     <?php wp_head() ?>
 </head>
-<body  <?php body_class("site"); ?>>
+<body  <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('background_body') ?>;">
 <header class="site__header">
 <div class="boite__modale boite__modale--fermer">
     <button class="boite__modale__fermer">X</button>
