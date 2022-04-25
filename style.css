@@ -696,6 +696,10 @@ COMPOSANTES
   border: solid #4dd5ff 2px;
 }
 
+.formation__cours__invisible {
+  display: none;
+}
+
 .cours__titre {
   font-size: 1.5rem;
   color: #443936;
@@ -1105,8 +1109,11 @@ Navigation catégorie cours
   color: white;
   border-radius: 20px;
   z-index: 10;
-  transform: scale(0);
   transition: 2s ease-in-out;
+}
+
+.boite__modale--fermer {
+  transform: scale(0);
 }
 
 .boite__modale--ouvert {

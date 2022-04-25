@@ -13,9 +13,11 @@
     $nbHeures = get_field("nombre_dheures") . " heures";
     $departement = get_field("departement");
     $sigleCours = substr($titre, 0, 3);
-    $descCours = get_the_excerpt();
     $descCours = get_the_content();
     ?>
+    <code class="formation__cours__invisible">
+        <?= 	$descCours ?>
+    </code>
     <?php the_post_thumbnail("thumbnail", "medium"); ?>
     <h3 class="cours__titre">
         <a href="<?php echo get_permalink(); ?>">
