@@ -30,13 +30,25 @@
             "title"=>"Modifier le background du body"
         ]);
         $manager->add_setting('background_body',[
-            "default"=>"#fff",
+            "default"=>"#2e3440",
             "sanitize_callback"=>"sanitize_hex_color"
         ]);
-        $manager->add_control('background_body',[
-            "section"=>"modifier_background_body",
-            "setting"=>"background_body",
-            "label"=>"couleur du background de body"
+        // $manager->add_control('background_body',[
+        //     "section"=>"modifier_background_body",
+        //     "setting"=>"background_body",
+        //     "label"=>"couleur du background de body"
+        // ]);
+        $manager->add_control(new WP_Customize_Color_Control($manager, 'background_body', ["section"=>"modifier_background_body", "label"=>"Couleur du background du body"]));
+
+        // $manager->add_section('modifier_background_body_clippath', [
+        //     "title"=>"Modifier le background du body clippath"
+        // ]);
+        $manager->add_setting('background_body_clippath',[
+            "default"=>"#d60000",
+            "sanitize_callback"=>"sanitize_hex_color"
         ]);
+        $manager->add_control(new WP_Customize_Color_Control($manager, 'background_body_clippath', ["section"=>"modifier_background_body", "label"=>"Couleur du background du body du clippath"]));
+
+        // $manager->add_control(new WP_Customize_Color_Control($manager, 'background_body_clippath', ["section"=>"modifier_background_body_clippath", "label"=>"Couleur du background du clip path"]));
     })
 ?>
