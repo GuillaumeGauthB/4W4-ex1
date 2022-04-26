@@ -1125,8 +1125,13 @@ Navigation catégorie cours
   flex-flow: row nowrap;
 }
 
+.evenement__titre {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .evenement div:nth-of-type(2) {
-  border-left: purple 3px solid;
+  border-left: #d41c1c 3px solid;
   padding-left: 5px;
 }
 

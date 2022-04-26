@@ -9,13 +9,15 @@
 
 <?php 	get_header() ?>
 <main class="site__main">
+     <h1>Évènements</h1>
      <article class="evenement">
           <div>
-               <h1>Évènements</h1>
           <?php if (have_posts()): ?>
-               <?php 	the_post_thumbnail() ?>
-               <p class="evenement__titre"><?php the_title() ?></p>
+               <?php 	//the_post_thumbnail() ?>
+               <h2 class="evenement__titre"><?php the_title() ?></h2>
+               <p>Informations pertinentes</p>
                <p class="evenement__endroit"><?php 	the_field("endroit") ?></p>
+
                <p class="evenement__date"><?php 	the_field("date") ?></p>
                <p class="evenement__heure"><?php 	the_field("heure") ?></p>
                <p class="evenement__organisateur"><?php 	the_field("organisateur") ?></p>

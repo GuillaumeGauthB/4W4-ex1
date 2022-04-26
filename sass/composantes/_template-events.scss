@@ -1,8 +1,12 @@
 .evenement{
     display:flex;
     flex-flow:row nowrap;
+    &__titre{
+        margin-top:0;
+        margin-bottom:50px;
+    }
     div:nth-of-type(2){
-        border-left: purple 3px solid;
+        border-left: $color__background-body-clip 3px solid;
         padding-left:5px;
     }
 }
