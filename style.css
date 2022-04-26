@@ -1120,6 +1120,11 @@ Navigation catégorie cours
   transform: scale(1);
 }
 
+.evenement {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
