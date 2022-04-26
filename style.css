@@ -1125,6 +1125,11 @@ Navigation catégorie cours
   flex-flow: row nowrap;
 }
 
+.evenement div:nth-of-type(2) {
+  border-left: purple 3px solid;
+  padding-left: 5px;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */

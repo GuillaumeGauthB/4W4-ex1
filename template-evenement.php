@@ -11,7 +11,7 @@
 <main class="site__main">
      <article class="evenement">
           <div>
-          <h1>Évènements</h1>
+               <h1>Évènements</h1>
           <?php if (have_posts()): ?>
                <?php 	the_post_thumbnail() ?>
                <p class="evenement__titre"><?php the_title() ?></p>
