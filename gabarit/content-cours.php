@@ -16,11 +16,12 @@
     $descCours = get_the_content();
     ?>
     <code class="formation__cours__invisible">
-        <?= 	substr($descCours, 0, 6) ?>
-        <br>
-        <?= 	substr($descCours, 6, 12) ?>
-        <br>
-        <?= 	substr($descCours, 12) ?>
+        <?php 	//substr($descCours, 0, 6) ?>
+        <!-- <br> -->
+        <?php 	//substr($descCours, 6, 12) ?>
+        <!-- <br> -->
+        <?php 	//substr($descCours, 12) ?>
+        <?= $descCours ?>
     </code>
     <?php the_post_thumbnail("thumbnail", "medium"); ?>
     <h3 class="cours__titre">

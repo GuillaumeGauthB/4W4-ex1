@@ -10,7 +10,7 @@
         bout.addEventListener('mousedown', function(){
             boiteModale.classList.add('boite__modale--ouvert');
             boiteModale.classList.remove('boite__modale--fermer');
-            boiteModaleTexte.innerHTML = this.parentNode.parentNode.children[0].innerHTML
+            boiteModaleTexte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
         })
     }
 
