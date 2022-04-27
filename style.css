@@ -1120,6 +1120,16 @@ Navigation catégorie cours
   transform: scale(1);
 }
 
+.boite__modale__fermer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.boite__modale__texte {
+  margin: 5px;
+}
+
 .evenement {
   display: flex;
   flex-flow: row nowrap;

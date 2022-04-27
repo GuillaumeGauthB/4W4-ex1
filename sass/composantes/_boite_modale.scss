@@ -18,4 +18,12 @@
     &--ouvert{
         transform: scale(1);
     }
+    &__fermer{
+        position:absolute;
+        right:10px;
+        bottom:10px;
+    }
+    &__texte{
+        margin:5px;
+    }
 }
