@@ -5,6 +5,12 @@
         margin-top:0;
         margin-bottom:50px;
     }
+    &__container{
+        background-color:darkgrey;
+        padding:5px;
+        border-radius:5px;
+        margin-right:10px;
+    }
     div:nth-of-type(2){
         border-left: $color__background-body-clip 3px solid;
         padding-left:5px;

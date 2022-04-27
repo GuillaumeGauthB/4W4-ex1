@@ -16,10 +16,11 @@
                <?php 	//the_post_thumbnail() ?>
                <h2 class="evenement__titre"><?php the_title() ?></h2>
                <p>Informations pertinentes</p>
-               <p class="evenement__endroit"><?php 	the_field("endroit") ?></p>
-
-               <p class="evenement__date"><?php 	the_field("date") ?></p>
-               <p class="evenement__heure"><?php 	the_field("heure") ?></p>
+               <div class="evenement__container">
+                    <p class="evenement__endroit"><?php 	the_field("endroit") ?></p>
+                    <p class="evenement__date"><?php 	the_field("date") ?></p>
+                    <p class="evenement__heure"><?php 	the_field("heure") ?></p>
+               </div>
                <p class="evenement__organisateur"><?php 	the_field("organisateur") ?></p>
                <p class="evenement__resume"><?php 	the_field("resume") ?></p>
           </div>
