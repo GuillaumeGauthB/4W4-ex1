@@ -52,25 +52,25 @@
 
 }
 
-
-
-.cours__titre {
-    font-size: 1.5rem;
-    color: $color__font-main;
-    margin: 5px 0px;
-}
-
-.cours__sigle {
-    font-size: 1.2rem;
-    color: rgb(138, 83, 83);
-    margin: 0;
-}
-
-.cours__description {
-    font-size: 1rem;
-}
-
-.cours__img{
-    object-fit:cover;
-    width:20%;
+.cours{
+    &__titre {
+        font-size: 1.5rem;
+        color: $color__font-main;
+        margin: 5px 0px;
+    }
+    
+    &__sigle {
+        font-size: 1.2rem;
+        color: rgb(138, 83, 83);
+        margin: 0;
+    }
+    
+    &__description {
+        font-size: 1rem;
+    }
+    
+    &__img{
+        object-fit:cover;
+        width:40%;
+    }
 }
