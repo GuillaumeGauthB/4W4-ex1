@@ -23,7 +23,8 @@
         <?php 	//substr($descCours, 12) ?>
         <?= $descCours ?>
     </code>
-    <?php the_post_thumbnail("thumbnail", "medium"); ?>
+    <?php //the_post_thumbnail("thumbnail", "medium"); ?>
+    <img class="cours__img" src="<?= 	esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')) ?>" loading="lazy">
     <h3 class="cours__titre">
         <a href="<?php echo get_permalink(); ?>">
             <?= $titreFiltreCours; ?>
