@@ -1190,6 +1190,10 @@ Navigation catégorie cours
   overflow: hidden;
 }
 
+.boite__modale__img {
+  max-height: 60vh;
+}
+
 .evenement {
   display: flex;
   flex-flow: row nowrap;

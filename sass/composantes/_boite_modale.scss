@@ -27,4 +27,9 @@
         margin:5px;
         overflow: hidden;
     }
+    &__img{
+        //height: inherit;
+        // object-fit: cover;
+        max-height:60vh;
+    }
 }
