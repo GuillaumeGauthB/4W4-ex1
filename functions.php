@@ -6,8 +6,20 @@ function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_style('cidw-4w4-police-google', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Palette+Mosaic&family=Ubuntu+Mono&display=swap', false);
-    wp_enqueue_script('cidw-4w4-boite-modale', get_template_directory_uri() . '/scripts/boite-modale.js', array(), filemtime(get_template_directory() . '/scripts/boite-modale.js'), true);
+    wp_register_script('cidw-4w4-boite-modale', get_template_directory_uri() . '/scripts/boite-modale.js', array(), filemtime(get_template_directory() . '/scripts/boite-modale.js'), true);
     wp_enqueue_script('cidw-4w4-burger', get_template_directory_uri() . '/scripts/burger.js', array(), filemtime(get_template_directory() . '/scripts/burger.js'), true);
+    wp_register_script('cidw-4w4-caroussel', 
+                        get_template_directory_uri() . '/scripts/caroussel.js',
+                        array(),
+                        filemtime(get_template_directory() . '/scripts/caroussel.js'),
+                        true); 
+
+    if (is_category('cours')){
+        wp_enqueue_script('cidw-4w4-boite-modale');                   
+        }
+        if (/*is_front_page()*/ get_the_title() == "Galerie"){
+        wp_enqueue_script('cidw-4w4-caroussel');   
+        }  
 }
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 
