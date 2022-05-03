@@ -20,9 +20,7 @@
 <body  <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('background_body') ?>;"?>
 <header class="site__header">
 <div class="boite__modale boite__modale--fermer">
-    <article class="boite__modale__texte">
-        Ceci est un test pour verifier le fonctionnement de la boite modale
-    </article>
+    <article class="boite__modale__texte"></article>
     <button class="boite__modale__fermer">X</button>
 </div>
     <section class="titre">
