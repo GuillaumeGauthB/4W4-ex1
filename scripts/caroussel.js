@@ -5,6 +5,7 @@
     console.log("galerie__img.length = " + galerie__img.length)
     let boite__modale__ferme = document.querySelector(".boite__modale__fermer")
     let boite__modale__texte = document.querySelector(".boite__modale__texte")
+    let boite__carrousel__navigation = document.querySelector('.boite__carrousel__navigation')
   
     boite__modale__ferme.addEventListener('mousedown', function(){
       boite__modale.classList.remove('boite__modale--ouvrir')
@@ -16,8 +17,15 @@
     image.classList.add("boite__modale__img")
     //img.setAttribute("src", "#")
   console.log("test");
-  
+  let index = 0;
     for (const img of galerie__img) {
+      let bouton = document.createElement('button')
+        bouton.dataset.index = index++
+        boite__carrousel__navigation.append(bouton)
+        bouton.addEventListener('mousedown', function(){
+          image.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
+        })
+
         img.addEventListener('mousedown',function(){
           boite__modale.classList.add('boite__modale--ouvrir')
           boite__modale.classList.remove('boite__modale--fermer')

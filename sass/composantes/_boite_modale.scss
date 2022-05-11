@@ -32,4 +32,12 @@
         // object-fit: cover;
         max-height:60vh;
     }
+    button{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        &:focus {
+            background-color: black;
+        }
+    }
 }

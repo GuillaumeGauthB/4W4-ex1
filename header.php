@@ -22,6 +22,7 @@
 <div class="boite__modale boite__modale--fermer">
     <article class="boite__modale__texte"></article>
     <button class="boite__modale__fermer">X</button>
+    <div class="boite__carrousel__navigation"></div>
 </div>
     <section class="titre">
         <h1 class="header__titre"> <a href="<?php echo esc_url( home_url('/'));?>"><?php 	the_custom_logo(); ?></a> <a href="<?php echo esc_url( home_url('/'));?>"><?php bloginfo('name'); ?></a></h1>

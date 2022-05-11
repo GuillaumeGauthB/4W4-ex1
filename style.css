@@ -1194,6 +1194,16 @@ Navigation catégorie cours
   max-height: 60vh;
 }
 
+.boite__modale button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.boite__modale button:focus {
+  background-color: black;
+}
+
 .evenement {
   display: flex;
   flex-flow: row nowrap;
