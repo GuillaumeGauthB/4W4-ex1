@@ -21,6 +21,7 @@
     for (const img of galerie__img) {
       let bouton = document.createElement('button')
         bouton.dataset.index = index++
+        bouton.innerText = index;
         boite__carrousel__navigation.append(bouton)
         bouton.addEventListener('mousedown', function(){
           image.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
