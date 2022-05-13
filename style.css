@@ -1214,8 +1214,9 @@ Navigation catégorie cours
 
 .boite__modale .boite__carrousel__navigation button {
   margin-left: 35px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 2px 2px 0 red;
   border-radius: 100%;
 }
 
