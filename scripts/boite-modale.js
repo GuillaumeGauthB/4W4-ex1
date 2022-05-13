@@ -5,6 +5,7 @@
     let boiteModaleFerme = document.querySelector(".boite__modale__fermer");
     let boiteModaleTexte = document.querySelector(".boite__modale__texte");
     console.log(boutonLecture.length);
+    boiteModaleFerme.classList.add("modale__fermer");
 
     for (const bout of boutonLecture){
         bout.addEventListener('mousedown', function(){
