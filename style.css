@@ -1012,12 +1012,21 @@ COMPOSANTES
 .site__footer__ligne .footer__menu ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
+  max-width: 100vw;
 }
 
 .site__footer__ligne .footer__menu ul .menu-item {
+  margin-left: 2px;
   margin: 10px 5px;
+}
+
+@media screen and (min-width: 500px) {
+  .site__footer__ligne .footer__menu ul .menu-item {
+    margin-left: 35px;
+  }
 }
 
 .site__footer__ligne .footer__menu ul .menu-item a {

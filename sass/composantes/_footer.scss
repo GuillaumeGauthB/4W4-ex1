@@ -50,9 +50,15 @@
       ul{ // .site__footer__menu__ul
         display : flex;
         flex-direction:row;
+        flex-wrap: wrap;
         list-style-type: none;
         justify-content: center;
+        max-width: 100vw;
         .menu-item{ // .site__footer__menu__ul .menu-item
+          margin-left:2px;
+          @media screen and (min-width:$largeur__media--mobil){
+            margin-left:35px;
+          }
             margin : 10px 5px;
           a{ // .site__footer__menu__ul .menu-item a
             display : flex;
