@@ -7,6 +7,8 @@
     let boite__modale__texte = document.querySelector(".boite__modale__texte")
     let boite__carrousel__navigation = document.querySelector('.boite__carrousel__navigation')
   
+    boite__modale__ferme.classList.add("caroussel__fermer")
+
     boite__modale__ferme.addEventListener('mousedown', function(){
       boite__modale.classList.remove('boite__modale--ouvrir')
       boite__modale.classList.add('boite__modale--fermer')

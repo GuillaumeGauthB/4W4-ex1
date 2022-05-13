@@ -20,9 +20,12 @@
     }
     &__fermer{
         position:absolute;
+        z-index: 15;
+        // width: 25px;
+    }
+    .caroussel__fermer{
         right:10px;
-        bottom:10px;
-        z-index: 5;
+        top:10px;
     }
     &__texte{
         margin:5px;
@@ -40,8 +43,6 @@
     .boite__carrousel__navigation{
         position: absolute;
         bottom:0;
-        // position: relative;
-        // bottom:0;
         z-index:15;
         background-color: rgba(92, 106, 121, 0.651);
         border-radius: 25px 25px 5px 5px;
@@ -51,7 +52,7 @@
             padding-right:30px;
             border-radius: 25px 25px 0 0;
         }
-        button{
+        & button{
             margin-left:35px;
             width: 30px;
             height: 30px;
