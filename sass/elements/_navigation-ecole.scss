@@ -1,11 +1,24 @@
 .navigation__ecole {
     // background-color: #3e4758;
     display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    @media screen and (min-width: $largeur__media--tablette){
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        &__menu{
+            // margin-left: auto;
+            // margin-right: auto;
+            ul{
+                margin-bottom: 0px;
+            }
+        }
+    }
     max-width: 70vw;
     // gap:40px;
     &__menu ul{
+        margin-bottom: 5px;
         display:flex;
         flex-flow: column nowrap;
         box-shadow: 2px 2px 0 $color__background-body-clip;
