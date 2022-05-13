@@ -1206,10 +1206,16 @@ Navigation catégorie cours
   bottom: 0;
   z-index: 15;
   background-color: rgba(92, 106, 121, 0.651);
-  border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px 5px 5px;
   padding: 5px;
-  margin-left: 15px;
-  padding-right: 30px;
+}
+
+@media screen and (min-width: 500px) {
+  .boite__modale .boite__carrousel__navigation {
+    margin-left: 15px;
+    padding-right: 30px;
+    border-radius: 25px 25px 0 0;
+  }
 }
 
 .boite__modale .boite__carrousel__navigation button {

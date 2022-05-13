@@ -39,15 +39,18 @@
     }
     .boite__carrousel__navigation{
         position: absolute;
-            bottom:0;
+        bottom:0;
         // position: relative;
         // bottom:0;
         z-index:15;
         background-color: rgba(92, 106, 121, 0.651);
-        border-radius: 25px 25px 0 0;
+        border-radius: 25px 25px 5px 5px;
         padding: 5px;
-        margin-left:15px;
-        padding-right:30px;
+        @media screen and (min-width: $largeur__media--mobil){
+            margin-left:15px;
+            padding-right:30px;
+            border-radius: 25px 25px 0 0;
+        }
         button{
             margin-left:35px;
             width: 30px;
