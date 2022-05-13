@@ -39,21 +39,25 @@
         height: 100%;
         top :0;
         right: 0;
+        border-radius: 20px;
     }
     .boite__carrousel__navigation{
         position: absolute;
         bottom:0;
         z-index:15;
         background-color: rgba(92, 106, 121, 0.651);
-        border-radius: 25px 25px 5px 5px;
+        border-radius: 25px 25px 20px 20px;
         padding: 5px;
-        @media screen and (min-width: $largeur__media--mobil){
+        @media screen and (min-width: $largeur__media--tablette){
             margin-left:15px;
             padding-right:30px;
             border-radius: 25px 25px 0 0;
         }
         & button{
-            margin-left:35px;
+            margin-left: 5px;
+            @media screen and (min-width: $largeur__media--tablette) {
+                margin-left:35px;
+            }
             width: 30px;
             height: 30px;
             box-shadow:2px 2px 0 red;

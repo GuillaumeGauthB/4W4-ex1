@@ -1202,6 +1202,7 @@ Navigation catégorie cours
   height: 100%;
   top: 0;
   right: 0;
+  border-radius: 20px;
 }
 
 .boite__modale .boite__carrousel__navigation {
@@ -1209,11 +1210,11 @@ Navigation catégorie cours
   bottom: 0;
   z-index: 15;
   background-color: rgba(92, 106, 121, 0.651);
-  border-radius: 25px 25px 5px 5px;
+  border-radius: 25px 25px 20px 20px;
   padding: 5px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
   .boite__modale .boite__carrousel__navigation {
     margin-left: 15px;
     padding-right: 30px;
@@ -1222,11 +1223,17 @@ Navigation catégorie cours
 }
 
 .boite__modale .boite__carrousel__navigation button {
-  margin-left: 35px;
+  margin-left: 5px;
   width: 30px;
   height: 30px;
   box-shadow: 2px 2px 0 red;
   border-radius: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale .boite__carrousel__navigation button {
+    margin-left: 35px;
+  }
 }
 
 .boite__modale .boite__carrousel__navigation button:focus {
