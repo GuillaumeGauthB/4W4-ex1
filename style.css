@@ -1181,10 +1181,6 @@ Navigation catégorie cours
 
 .boite__modale {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: #4e4e4e;
   border: 5px solid #2e3440;
   color: white;
@@ -1193,8 +1189,18 @@ Navigation catégorie cours
   transition: 1s ease-in-out;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 800px) {
   .boite__modale {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale {
+    height: auto;
     width: 50%;
     min-height: 50%;
     max-height: 90%;
@@ -1299,6 +1305,14 @@ Navigation catégorie cours
   border-radius: 5px;
   margin-right: 10px;
   box-shadow: 5px 5px 0 dimgray;
+}
+
+.evenement__organisateur {
+  margin-left: 50px;
+}
+
+.evenement__resume {
+  margin-top: 10%;
 }
 
 .evenement div:nth-of-type(2) {

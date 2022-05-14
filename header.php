@@ -12,7 +12,7 @@
     <title>4W4</title>
     <?php wp_head() ?>
     <style>
-        .site{
+        .site::after{
             background-color:<?= get_theme_mod('background_body_clippath')?>;
         }
     </style>

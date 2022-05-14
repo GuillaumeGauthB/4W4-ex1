@@ -38,8 +38,6 @@
         })
     }
   
-  
-  
     /*
   this.parentNode
   this.parentNode.children(2)
