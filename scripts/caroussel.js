@@ -21,7 +21,11 @@
   console.log("test");
   let index = 0;
     for (const img of galerie__img) {
-      let bouton = document.createElement('button')
+      let bouton = document.createElement('input')
+      bouton.setAttribute('type', 'radio')
+      bouton.setAttribute('checked', '')
+      bouton.setAttribute('name','bouton')
+      bouton.setAttribute('class','bouton')
         bouton.dataset.index = index++
         bouton.innerText = index;
         boite__carrousel__navigation.append(bouton)
