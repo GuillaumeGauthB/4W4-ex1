@@ -32,7 +32,8 @@ function cidw_4w4_register_nav_menu(){
         'menu_frontpage'    => __('Menu front page', 'cidw_4w4'),
         'menu_accueil'      => __('Menu accueil', 'cidw_4w4'),
         'departement'       => __('Département TIM', 'cidw-4w4'),
-        'evenements'        => __('Les évènements à venir', 'cidw-4w4')));
+        'evenements'        => __('Les évènements à venir', 'cidw-4w4'),
+        'ateliers'        => __('Les ateliers', 'cidw-4w4')));
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 
