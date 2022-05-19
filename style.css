@@ -1347,6 +1347,15 @@ Navigation catégorie cours
   align-items: center;
 }
 
+.atelier__temps {
+  background-color: darkgrey;
+  width: 80%;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border: purple solid 2px;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
