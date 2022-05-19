@@ -23,7 +23,22 @@
         flex-flow: column nowrap;
         box-shadow: 2px 2px 0 $color__background-body-clip;
         li{
-            width:300px;
+            width: 300px;
+        }
+    }
+}
+
+.navigation__ateliers{
+    width: 100%;
+    &__menu ul{
+        max-width: 70vw;
+        display:flex;
+        flex-flow: row wrap;  
+        justify-content: space-between; 
+        li{
+            width: 200px;
+            box-shadow: 2px 2px 0 $color__background-body-clip;
+            // border-radius: 10px;
         }
     }
 }

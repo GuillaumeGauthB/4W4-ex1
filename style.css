@@ -454,6 +454,22 @@ p {
   width: 300px;
 }
 
+.navigation__ateliers {
+  width: 100%;
+}
+
+.navigation__ateliers__menu ul {
+  max-width: 70vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.navigation__ateliers__menu ul li {
+  width: 200px;
+  box-shadow: 2px 2px 0 #d41c1c;
+}
+
 /*==================================================================== CLASSES DIVERSES ==============*/
 :root {
   --hcaroussel-large: 89.5vh;
