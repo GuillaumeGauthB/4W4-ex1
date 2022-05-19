@@ -465,9 +465,78 @@ p {
   justify-content: space-between;
 }
 
+.navigation__ateliers__menu ul .react a .menu-item-icone {
+  background: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.navigation__ateliers__menu ul .wp a .menu-item-icone {
+  background: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.navigation__ateliers__menu ul .assembly a .menu-item-icone {
+  background: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.navigation__ateliers__menu ul .python a .menu-item-icone {
+  background: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
 .navigation__ateliers__menu ul li {
+  background-color: #2e3440;
   width: 200px;
   box-shadow: 2px 2px 0 #d41c1c;
+  transform: translateX(80vw);
+}
+
+.navigation__ateliers__menu ul li:nth-of-type(1) {
+  animation: animation-navigation-ateliers 2s forwards;
+  animation-delay: 1s;
+}
+
+.navigation__ateliers__menu ul li:nth-of-type(2) {
+  animation: animation-navigation-ateliers 2s forwards;
+  animation-delay: 2s;
+}
+
+.navigation__ateliers__menu ul li:nth-of-type(3) {
+  animation: animation-navigation-ateliers 2s forwards;
+  animation-delay: 3s;
+}
+
+.navigation__ateliers__menu ul li:nth-of-type(4) {
+  animation: animation-navigation-ateliers 2s forwards;
+  animation-delay: 4s;
+}
+
+.navigation__ateliers__menu ul li:nth-of-type(5) {
+  animation: animation-navigation-ateliers 2s forwards;
+  animation-delay: 5s;
+}
+
+.navigation__ateliers__menu ul li a {
+  text-align: center;
+}
+
+.navigation__ateliers__menu ul li a .menu-item-description {
+  font-size: 1rem;
+  color: #c7c7c7;
+}
+
+.navigation__ateliers__menu ul li a .menu-item-icone {
+  z-index: 20;
+  height: 100px;
+  background-repeat: no-repeat;
+  width: 50%;
+  margin: auto auto;
+}
+
+@keyframes animation-navigation-ateliers {
+  from {
+    transform: translateX(80vw);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /*==================================================================== CLASSES DIVERSES ==============*/

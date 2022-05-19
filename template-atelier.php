@@ -9,11 +9,10 @@
 
 <?php 	get_header() ?>
 <main class="site__main">
-     <h1>Atelier</h1>
      <article class="atelier">
           <div>
           <?php if (have_posts()): ?>
-               <h2 class="atelier__titre"><?php the_title() ?></h2>
+               <h1 class="atelier__titre"><?php the_title() ?></h1>
                <!-- <p>Informations pertinentes</p> -->
                <div class="atelier__temps">
                     <p class="atelier__temps__date-debut">Date de début: <?php 	the_field("date_debut") ?></p>

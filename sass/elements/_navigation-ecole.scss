@@ -35,10 +35,59 @@
         display:flex;
         flex-flow: row wrap;  
         justify-content: space-between; 
+        .react a{
+            .menu-item-icone{
+                background: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+            }
+        }
+        .wp a{
+            .menu-item-icone{
+                background: url("https://s2.svgbox.net/files.svg?ic=css");
+            }
+        }
+        .assembly a{
+            .menu-item-icone{
+                background: url("https://s2.svgbox.net/files.svg?ic=html");
+            }
+        }
+        .python a{
+            .menu-item-icone{
+                background: url("https://s2.svgbox.net/files.svg?ic=git");
+            }
+        }
+
         li{
+            background-color: $color__background-link;
             width: 200px;
             box-shadow: 2px 2px 0 $color__background-body-clip;
-            // border-radius: 10px;
+            transform: translateX(80vw);
+            @for $i from 1 through 5{
+                &:nth-of-type(#{$i}){
+                    animation: animation-navigation-ateliers 2s forwards;
+                    animation-delay: #{$i*1s};
+                }
+            }
+            a { 
+                text-align:center;
+                .menu-item{
+                    &-description{
+                        font-size: 1rem;
+                        color: rgb(199, 199, 199);
+                    }
+                    &-icone{
+                        z-index: 20;
+                        height: 100px;
+                        background-repeat: no-repeat;
+                        width: 50%;
+                        margin: auto auto;
+                    }
+                }
+            }
         }
     }
+}
+
+@keyframes animation-navigation-ateliers{
+    from{transform: translateX(80vw)}
+    to{transform: translateX(0)}
 }
