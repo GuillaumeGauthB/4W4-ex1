@@ -1441,6 +1441,17 @@ Navigation catégorie cours
   border: purple solid 2px;
 }
 
+.texte__atelier {
+  font-style: italic;
+  white-space: nowrap;
+  width: auto;
+  color: purple;
+}
+
+.atelier {
+  white-space: nowrap;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
