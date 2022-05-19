@@ -9,23 +9,25 @@
 
 <?php 	get_header() ?>
 <main class="site__main">
-     <h1>Évènements</h1>
-     <article class="evenement">
+     <h1>Atelier</h1>
+     <article class="atelier">
           <div>
           <?php if (have_posts()): ?>
-               <?php 	//the_post_thumbnail() ?>
-               <h2 class="evenement__titre"><?php the_title() ?></h2>
+               <h2 class="atelier__titre"><?php the_title() ?></h2>
                <p>Informations pertinentes</p>
-               <div class="evenement__container">
-                    <p class="evenement__endroit"><?php 	the_field("endroit") ?></p>
-                    <p class="evenement__date"><?php 	the_field("date") ?></p>
-                    <p class="evenement__heure"><?php 	the_field("heure") ?></p>
+               <div class="atelier__container">
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("animateur") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("date_fin") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("jours_de_semaine") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("heure_debut") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("heure_fin") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("duree_dune_seance") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("local") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("date_debut") ?></p>
+                    <p class="atelier__container__animateur">Animateur: <?php 	the_field("description") ?></p>
                </div>
-               <p class="evenement__organisateur"><?php 	the_field("organisateur") ?></p>
-               <p class="evenement__resume"><?php 	the_field("resume") ?></p>
           </div>
           <div>
-               <img src="<?php 	the_field("image") ?>">
           </div>
                <?php endif ?>
      </article>

@@ -18,6 +18,11 @@
                 "container" => "nav",
                 "container_class" => "navigation__ecole__menu evenements__menu"
             ));
+            // wp_nav_menu(array(
+            //     "menu" => "ateliers",
+            //     "container" => "nav",
+            //     "container_class" => "navigation__ecole__menu ateliers__menu"
+            // ));
         ?>
     </section>
 </main>
